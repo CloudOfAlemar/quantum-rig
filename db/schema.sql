@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS crowdfund_db;
-CREATE DATABASE crowdfund_db;
+DROP DATABASE IF EXISTS giga_rig_maker_db;
+CREATE DATABASE giga_rig_maker_db;
