@@ -1,21 +1,28 @@
-const User = require('./User');
+const Guest = require('./Guest');
 const PC_build = require('./PC_build');
 const Part = require('./Part');
+const PC_build_parts = require('./PC_build_parts');
 
-User.hasMany(PC_build, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+PC_build.belongsTo(Guest, {
+  foreignKey: 'guest_id'
 });
 
-PC_build.belongsTo(User, {
-  foreignKey: 'user_id'
+Guest.hasMany(PC_build, {
+  foreignKey: 'guest_id'
 });
 
 PC_build.belongsToMany(Part, { 
-  through: 'PC_build_parts' });
+  through: {
+    model: PC_build_parts,
+    unique: false
+  }
+});
 
 Part.belongsToMany(PC_build, { 
-  through: 'PC_build_parts' });
+  through: {
+    model: PC_build_parts,
+    unique: false
+  } });
 
 
-module.exports = { User, PC_build, Part };
+module.exports = { Guest, PC_build, Part, PC_build_parts };

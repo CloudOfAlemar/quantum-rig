@@ -23,7 +23,7 @@ Part.init(
     },
     pc_build_id: {
         type: DataTypes.INTEGER,
-        references: { model: 'PC_build', key: 'id' }    
+        references: { model: 'pc_build', key: 'id' }    
     }
   },
   {
@@ -31,7 +31,7 @@ Part.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Part',
+    modelName: 'part',
   }
 );
 

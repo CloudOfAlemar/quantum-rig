@@ -1,43 +1,30 @@
 const sequelize = require('../config/connection');
-const { User, PC_build, Part } = require('../models');
+const { Guest, PC_build, Part, PC_build_parts} = require('../models');
 
-// Sample data files
-const userData = require('./userData.json');
-const pcBuildData = require('./PC_Build_Data.json');
-const partData = require('./partData.json');
+const guestData = require('./guestData.json');
+const pc_build_data = require('./PC_Build_Data.json');
+const part_data = require('./partData.json');
+const pc_build_parts_data = require('./pc_build_parts_data.json');
 
-// Function to seed the database
 const seedDatabase = async () => {
-  // Sync all models to the database (force:true will drop the table if it exists)
   await sequelize.sync({ force: true });
 
-  try {
-    // Create users
-    const users = await User.bulkCreate(userData);
+  const guests = await Guest.bulkCreate(guestData, {
+    individualHooks: true,
+    returning: true,
+  });
 
-    // Create PC_builds
-    const pc_builds = await PC_build.bulkCreate(pcBuildData);
+  for (const pc_build of pc_build_data) {
+    await PC_build.create({
+      ...pc_build
+    });
+  };
 
-    // Create Parts
-    const parts = await Part.bulkCreate(partData);
+  const parts = await Part.bulkCreate(part_data);
 
-    // Associate parts with PC_builds
-    await Promise.all(
-      parts.map(async (part, index) => {
-        // Assign pc_build_id to parts based on pcBuildData
-        const pc_build_id = pcBuildData[index % pcBuildData.length].id;
-        await part.setPC_build(pc_build_id);
-      })
-    );
+  const pc_build_parts = await PC_build_parts.bulkCreate(pc_build_parts_data);
 
-    console.log('Database seeded successfully!');
-  } catch (error) {
-    console.error('Error seeding database:', error);
-  } finally {
-    // Close the connection
-    await sequelize.close();
-  }
+  process.exit(0);
 };
 
-// Execute the seedDatabase function
 seedDatabase();

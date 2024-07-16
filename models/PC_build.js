@@ -18,14 +18,14 @@ PC_Build.init(
     personal_comments: {
       type: DataTypes.STRING,
     },
-    parts: {
+    part: {
       type: DataTypes.INTEGER,
-      references: { model: 'Part', key: 'id' }    
+      references: { model: 'part', key: 'id' }    
     },
-    user_id: {
+    guest_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'guest',
         key: 'id',
       },
     },
@@ -35,7 +35,7 @@ PC_Build.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'PC_build',
+    modelName: 'pc_build',
   }
 );
 

@@ -5,15 +5,19 @@ class PC_build_parts extends Model {}
 
 PC_build_parts.init(
   {
-    pc_build_id: {
+    id:{
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: { model: 'PC_build', key: 'id' }
+      primaryKey: true,
+      autoIncrement: true
+    },
+    pc_build_id: {
+      type: DataTypes.INTEGER,
+      references: { model: 'pc_build', key: 'id' }
     },
     part_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      references: { model: 'Part', key: 'id' }
+      references: { model: 'part', key: 'id' }
     }
   },
   {
@@ -21,7 +25,7 @@ PC_build_parts.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'PC_build_parts',
+    modelName: 'pc_build_parts',
   }
 );
 
