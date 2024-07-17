@@ -1,3 +1,5 @@
+
+/* Quantum Rig Color Palette */
 :root {
   --dark-purple : hsla( 225, 100%, 20%, 1 );
   --light-blue : hsla( 189, 67%, 80%, 1 );
@@ -7,11 +9,19 @@
   --pink : hsla( 313, 99%, 48%, 1 );
 }
 
+.hero {
+  background: url( "../img/quantum-rig-bg.svg" );
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Color Utility Classes */
 .bg-dark-purple {
-  /* background-color: var( --dark-purple ); */
   background: linear-gradient(
     90deg,
-    var( --dark-purple )60%,
+    var( --dark-purple ) 60%,
     var( --red )
   );
 }
