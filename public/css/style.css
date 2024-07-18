@@ -1,24 +1,27 @@
-/* header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+
+/* Quantum Rig Color Palette */
+:root {
+  --dark-purple : hsla( 225, 100%, 20%, 1 );
+  --light-blue : hsla( 189, 67%, 80%, 1 );
+  --blue : hsla( 192, 85%, 59%, 1);
+  --red : hsla( 336, 98%, 55%, 1 );
+  --dark-blue : hsla( 214, 95%, 41%, 1 );
+  --pink : hsla( 313, 99%, 48%, 1 );
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.hero {
+  background: url( "../img/quantum-rig-bg.svg" );
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+/* Color Utility Classes */
+.bg-purple-pink-gradient {
+  background: linear-gradient(
+    90deg,
+    var( --dark-purple ) 60%,
+    var( --red )
+  );
 }
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-} */
