@@ -8,8 +8,8 @@ Quantum Rig is a full-stack web application that allows users to create and mana
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies](#technologies)
-- [License](#license)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
@@ -73,10 +73,6 @@ Quantum Rig is a full-stack web application that allows users to create and mana
 - **Authentication**: Express-Session, Connect-Session-Sequelize, bcrypt
 - **Utilities**: dotenv, nodemon (for development)
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contributing
 
 1. Fork the repository.
@@ -84,6 +80,10 @@ This project is licensed under the MIT License.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
 
