@@ -31,22 +31,22 @@
   color: var( --blue );
 }
 
-.login-btn {
+#login-btn {
   background-color: transparent;
   border: 2px solid var( --red );
   color: var( --light-blue );
 }
 
-.login-btn:hover {
+#login-btn:hover {
   background-color: var( --red );
 }
 
-.forge-btn {
+#forge-btn {
   background-color: var( --red );
   color: var( --light-blue );
 }
 
-.forge-btn:hover {
+#forge-btn:hover {
   background-color: hsla( 336, 98%, 35%, 1 );
 }
 
@@ -64,10 +64,6 @@
 }
 
 h2 {
-  color: white;
-}
-
-.form-group {
   color: white;
 }
 
