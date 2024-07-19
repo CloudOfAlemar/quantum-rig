@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { PC_build, Guest, Part} = require('../models');
+const { PcBuild, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const pcBuildData = await PC_build.findAll({
+    const pcBuildData = await PcBuild.findAll({
       include: [
         {
           model: Guest,
@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
 
 router.get('/pcBuilds/:id', async (req, res) => {
   try {
-    const pcBuildData = await PC_build.findByPk(req.params.id, {
+    const pcBuildData = await PcBuild.findByPk(req.params.id, {
       include: [
         {
           model: Guest,
@@ -58,11 +58,11 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const guestData = await Guest.findByPk(req.session.guest_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: PC_build }],
+      include: [{ model: PcBuild }],
     });
 
     const guest = guestData.get({ plain: true });
-
+    console.log(JSON.stringify(guest));
     res.render('profile', {
       ...guest,
       logged_in: true

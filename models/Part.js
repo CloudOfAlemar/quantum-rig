@@ -23,7 +23,7 @@ Part.init(
     },
     pc_build_id: {
         type: DataTypes.INTEGER,
-        references: { model: 'pc_build', key: 'id' }    
+        references: { model: 'pcBuild', key: 'id' }    
     }
   },
   {

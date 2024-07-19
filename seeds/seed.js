@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
-const { Guest, PC_build, Part} = require('../models');
+const { Guest, PcBuild, Part} = require('../models');
 
 const guestData = require('./guestData.json');
-const pc_build_data = require('./PC_Build_Data.json');
+const pc_build_data = require('./pcBuildData.json');
 const part_data = require('./partData.json');
 
 const seedDatabase = async () => {
@@ -14,7 +14,7 @@ const seedDatabase = async () => {
   });
 
   for (const pc_build of pc_build_data) {
-    await PC_build.create({
+    await PcBuild.create({
       ...pc_build
     });
   };

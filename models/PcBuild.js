@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class PC_Build extends Model {}
+class PcBuild extends Model {}
 
-PC_Build.init(
+PcBuild.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,8 +31,8 @@ PC_Build.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'pc_build',
+    modelName: 'pcBuild',
   }
 );
 
-module.exports = PC_Build;
+module.exports = PcBuild;

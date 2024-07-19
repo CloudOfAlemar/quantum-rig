@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { PC_build } = require('../../models');
+const { PcBuild } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newPcBuild = await PC_build.create({
+    const newPcBuild = await PcBuild.create({
       ...req.body,
       guest_id: req.session.guest_id,
     });
@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const pcBuildData = await PC_build.destroy({
+    const pcBuildData = await PcBuild.destroy({
       where: {
         id: req.params.id,
         guest_id: req.session.guest_id,
