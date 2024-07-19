@@ -1,0 +1,17 @@
+[
+  {
+    "name": "For Fortnite",
+    "personal_comments": "Christmas present for myself",
+    "guest_id": 1
+  },
+  {
+    "name": "For Dota 2",
+    "personal_comments": "New Years present for myself",
+    "guest_id": 2
+  },
+  {
+    "name": "For League of Legends",
+    "personal_comments": "Back To School present for myself",
+    "guest_id": 3
+  }
+]
