@@ -2,7 +2,15 @@ const router = require('express').Router();
 const { PcBuild, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get( "/", async ( req, res ) => {
+  try {
+    res.render( "landingPage" );
+  } catch( error ) {
+    res.status( 500 ).json( { error } );
+  }
+} );
+
+router.get('/builds', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const pcBuildData = await PcBuild.findAll({
