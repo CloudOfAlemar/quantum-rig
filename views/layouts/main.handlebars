@@ -34,14 +34,15 @@
           {{!-- Left Side Navigation Links --}}
           <div class="navbar-nav mr-auto">
             <a class="nav-item nav-link text-light active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link text-light" href="#">Build</a>
+            <a class="nav-item nav-link text-light" href="#">Forge PC</a>
+            <a class="nav-item nav-link text-light" href="#">Builds</a>
             <a class="nav-item nav-link text-light" href="#">Dashboard</a>
           </div>
 
           {{!-- Right Side Navigation Links --}}
           <div class="navbar-nav">
             <a href="#" class="nav-item nav-link text-light">Login</a>
-            <a href="#" class="nav-item nav-link text-light">Sign Up</a>
+            <a href="#" class="nav-item nav-link text-light">Sign up</a>
           </div>
         </div>
       </nav>
@@ -49,18 +50,29 @@
 
     {{!-- Main Content Will Go Here --}}
     <main>
-      <div class="hero">
+      <div class="container-fluid hero">
+        <div class="row m-0">
+          <div class="hero-content">
+            <h1 class="hero-heading mb-4">
+              From Concept to Creation: Your Ideal PC Awaits 
+            </h1>
 
+            <div class="hero-buttons-area">
+              <button type="button" class="btn btn-block login-btn">Login</button>
+              <button type="button" class="btn btn-block forge-btn">Forge PC</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
     {{!-- Footer --}}
-    <footer class="footer bg-purple-pink-gradient">
-      <nav class="nav flex-column">
-        <a class="nav-link text-light" href="#">Active</a>
-        <a class="nav-link text-light" href="#">Link</a>
-        <a class="nav-link text-light" href="#">Link</a>
-      </nav>
+    <footer class="footer bg-purple-pink-gradient container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="text-light text-center m-0">Created by: Jason, Renz, Truong and Alejandro</p>
+        </div>
+      </div>
     </footer>
   </div>
 
