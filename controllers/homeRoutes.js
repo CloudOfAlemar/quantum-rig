@@ -62,7 +62,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 
     const guest = guestData.get({ plain: true });
-    console.log("hello WORLD" + guest);
+
     res.render('profile', {
       ...guest,
       logged_in: true
