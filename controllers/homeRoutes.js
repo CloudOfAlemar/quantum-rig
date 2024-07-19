@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PC_build, Guest } = require('../models');
+const { PC_build, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -35,6 +35,9 @@ router.get('/pcBuilds/:id', async (req, res) => {
           model: Guest,
           attributes: ['name'],
         },
+        {
+          model: Part
+        }
       ],
     });
 
@@ -59,7 +62,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 
     const guest = guestData.get({ plain: true });
-
+    console.log("hello WORLD" + guest);
     res.render('profile', {
       ...guest,
       logged_in: true

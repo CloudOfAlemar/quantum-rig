@@ -6,7 +6,7 @@ router.post('/', withAuth, async (req, res) => {
   try {
     const newPcBuild = await PC_build.create({
       ...req.body,
-      user_id: req.session.user_id,
+      guest_id: req.session.guest_id,
     });
 
     res.status(200).json(newPcBuild);

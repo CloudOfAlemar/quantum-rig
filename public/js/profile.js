@@ -1,14 +1,13 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
+  const name = document.querySelector('#pcbuild-name').value.trim();
+  const personal_comments = document.querySelector('#pcbuild-comments').value.trim();
 
-  if (name && needed_funding && description) {
+  if (name && personal_comments) {
     const response = await fetch(`/api/pcBuilds`, {
       method: 'POST',
-      body: JSON.stringify({ name, personal_comments, part }),
+      body: JSON.stringify({ name, personal_comments}),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -39,9 +38,9 @@ const delButtonHandler = async (event) => {
 };
 
 document
-  .querySelector('.new-project-form')
+  .querySelector('.new-pcbuild-form')
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.project-list')
+  .querySelector('.pcbuild-list')
   .addEventListener('click', delButtonHandler);
