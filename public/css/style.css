@@ -11,10 +11,51 @@
 
 .hero {
   background: url( "../img/quantum-rig-bg.svg" );
+<<<<<<< HEAD
   min-height: 100vh; /* Extend to the bottom of the page */
+=======
+  height: 500px;
+>>>>>>> origin
   background-size: cover;
-  background-position: center;
+  background-position: 60% 0%;
   background-repeat: no-repeat;
+  padding-top: 75px;
+}
+
+.hero-content {
+  background-color: hsla( 0, 0%, 0%, 0.75 );
+  border-radius: 10px;
+  max-width: 290px;
+  padding: 1.5rem;
+}
+
+.hero-heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: var( --blue );
+}
+
+#login-btn {
+  background-color: transparent;
+  border: 2px solid var( --red );
+  color: var( --light-blue );
+}
+
+#login-btn:hover {
+  background-color: var( --red );
+}
+
+#forge-btn {
+  background-color: var( --red );
+  color: var( --light-blue );
+}
+
+#forge-btn:hover {
+  background-color: hsla( 336, 98%, 35%, 1 );
+}
+
+.footer {
+  padding: 2rem;
 }
 
 /* Color Utility Classes */
@@ -119,6 +160,19 @@ h2 {
   }
 }
 
-.form-group {
-  color: white;
+/* Media Queries: Breakpoints */
+@media screen and ( min-width: 992px ) {
+  .hero {
+    height: 750px;
+    padding: 8rem 4rem 4rem 4rem ;
+  }
+
+  .hero-content {
+    max-width: 400px;
+    padding: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 50px;
+  }
 }
