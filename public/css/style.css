@@ -11,7 +11,7 @@
 
 .hero {
   background: url( "../img/quantum-rig-bg.svg" );
-  height: 600px;
+  min-height: 100vh; /* Extend to the bottom of the page */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,96 @@
 }
 
 h2 {
+  color: white;body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.centered-div {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-6 {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+.form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for larger screens */
+@media(min-width: 768px) {
+  .col-md-6 {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+}
+
+/* Additional Media Queries for different screen sizes */
+@media(min-width: 30rem) { /* 480px equivalent */
+  .form {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media(min-width: 60rem) { /* 960px equivalent */
+  .form {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+  }
 }
 
 .form-group {
