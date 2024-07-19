@@ -18,10 +18,6 @@ PC_Build.init(
     personal_comments: {
       type: DataTypes.STRING,
     },
-    part: {
-      type: DataTypes.INTEGER,
-      references: { model: 'part', key: 'id' }    
-    },
     guest_id: {
       type: DataTypes.INTEGER,
       references: {

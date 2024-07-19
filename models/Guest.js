@@ -38,13 +38,13 @@ Guest.init(
   },
   {
     hooks: {
-      beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
+      beforeCreate: async (newGuestData) => {
+        newGuestData.password = await bcrypt.hash(newGuestData.password, 10);
+        return newGuestData;
       },
-      beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-        return updatedUserData;
+      beforeUpdate: async (updatedGuestData) => {
+        updatedGuestData.password = await bcrypt.hash(updatedGuestData.password, 10);
+        return updatedGuestData;
       },
     },
     sequelize,

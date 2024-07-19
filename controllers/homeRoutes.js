@@ -1,25 +1,25 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { PC_build, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
+    const pcBuildData = await PC_build.findAll({
       include: [
         {
-          model: User,
+          model: Guest,
           attributes: ['name'],
         },
       ],
     });
 
     // Serialize data so the template can read it
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const pcBuilds = pcBuildData.map((pcBuild) => pcBuild.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      projects, 
+      pcBuilds, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -27,21 +27,24 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/pcBuilds/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const pcBuildData = await PC_build.findByPk(req.params.id, {
       include: [
         {
-          model: User,
+          model: Guest,
           attributes: ['name'],
         },
+        {
+          model: Part
+        }
       ],
     });
 
-    const project = projectData.get({ plain: true });
+    const pcBuild = pcBuildData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('pcBuild', {
+      ...pcBuild,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -53,15 +56,15 @@ router.get('/project/:id', async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
+    const guestData = await Guest.findByPk(req.session.guest_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: PC_build }],
     });
 
-    const user = userData.get({ plain: true });
+    const guest = guestData.get({ plain: true });
 
     res.render('profile', {
-      ...user,
+      ...guest,
       logged_in: true
     });
   } catch (err) {
