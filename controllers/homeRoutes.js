@@ -61,7 +61,7 @@ router.get('/pcBuilds/:id', async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const guestData = await Guest.findByPk(req.session.guest_id, {
@@ -71,7 +71,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const guest = guestData.get({ plain: true });
     console.log(JSON.stringify(guest));
-    res.render('profile', {
+    res.render('dashboard', {
       ...guest,
       logged_in: true
     });
