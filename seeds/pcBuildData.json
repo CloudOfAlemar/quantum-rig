@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Gaming Rig",
+    "personal_comments": "High performance gaming setup",
+    "user_id": 1
+  },
+  {
+    "name": "Workstation",
+    "personal_comments": "Optimized for productivity",
+    "user_id": 2
+  }
+]

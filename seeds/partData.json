@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Intel i9 Processor",
+    "description": "High-end CPU",
+    "price": 500.00,
+    "type": "CPU",
+    "brand": "Intel",
+    "image_url": "https://example.com/intel-i9.jpg"
+  },
+  {
+    "name": "NVIDIA RTX 3080",
+    "description": "High-end GPU",
+    "price": 700.00,
+    "type": "GPU",
+    "brand": "NVIDIA",
+    "image_url": "https://example.com/nvidia-rtx-3080.jpg"
+  }
+]

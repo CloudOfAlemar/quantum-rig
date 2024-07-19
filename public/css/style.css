@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-purple-pink-gradient {
+  background: linear-gradient(90deg, hsla(225, 100%, 20%, 1) 60%, hsla(336, 98%, 55%, 1));
+}

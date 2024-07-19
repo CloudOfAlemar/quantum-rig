@@ -1,0 +1,10 @@
+{{#each pcBuilds}}
+  <div class='row mb-4 project'>
+    <div class='col-md-5'>
+      <h2>
+        <a href='/project/{{this.id}}'>{{this.name}}</a>
+      </h2>
+      <p>{{this.personal_comments}}</p>
+    </div>
+  </div>
+{{/each}}

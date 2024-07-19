@@ -1,0 +1,29 @@
+// public/js/signup.js
+document.addEventListener('DOMContentLoaded', () => {
+  const signupForm = document.querySelector('.signup-form');
+
+  signupForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name-signup').value.trim();
+    const email = document.getElementById('email-signup').value.trim();
+    const password = document.getElementById('password-signup').value.trim();
+
+    if (!name || !email || !password) {
+      alert('Please fill out all fields');
+      return;
+    }
+
+    const response = await fetch('/api/users/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, password })
+    });
+
+    if (response.ok) {
+      document.location.replace('/dashboard');
+    } else {
+      alert('Failed to sign up');
+    }
+  });
+});
