@@ -56,7 +56,7 @@ router.get('/pcBuilds/:id', async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const guestData = await Guest.findByPk(req.session.user_id, {
+    const guestData = await Guest.findByPk(req.session.guest_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: PC_build }],
     });
