@@ -25,9 +25,15 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
       allowNull: false,
     },
+    date_created: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
+      },
   }, {
     sequelize,
-    modelName: 'PcBuild',
+    timestamps: false,
+    modelName: 'pcBuild',
   });
 
   return PcBuild;

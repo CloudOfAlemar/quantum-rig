@@ -31,7 +31,7 @@ module.exports = (sequelize) => {
     },
   }, {
     sequelize,
-    modelName: 'PcPart',
+    modelName: 'pcPart',
   });
 
   return PcPart;
