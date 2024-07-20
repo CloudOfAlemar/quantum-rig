@@ -10,6 +10,11 @@ const PcPart = require('./PcPart')(sequelize);
 const PcBuild = require('./pcBuild')(sequelize);
 
 
+// Associations
+User.hasMany(PcBuild, { foreignKey: 'userId', onDelete: 'CASCADE' });
+PcBuild.belongsTo(User, { foreignKey: 'userId' });
+
+//old stuff
 User.hasMany(Project, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
