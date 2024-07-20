@@ -54,6 +54,10 @@
   padding: 2rem;
 }
 
+/*
+  Forge Styles
+*/
+
 /* Color Utility Classes */
 .bg-purple-pink-gradient {
   background: linear-gradient(
@@ -61,10 +65,6 @@
     var( --dark-purple ) 60%,
     var( --red )
   );
-}
-
-h2 {
-  color: white;
 }
 
 /* Media Queries: Breakpoints */

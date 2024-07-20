@@ -26,7 +26,7 @@ router.get('/builds', async (req, res) => {
     const pcBuilds = pcBuildData.map((pcBuild) => pcBuild.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('builds', { 
       pcBuilds, 
       logged_in: req.session.logged_in 
     });
@@ -34,6 +34,17 @@ router.get('/builds', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+/*
+  Creating Forge Routes ( Where we will build our PC )
+*/
+router.get( "/forge", async ( req, res ) => {
+  try {
+    res.render( "forge" );
+  } catch( error ) {
+    res.status( 500 ).json( { error } );
+  }
+} );
 
 router.get('/pcBuilds/:id', async (req, res) => {
   try {
