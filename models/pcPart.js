@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 
-module.exports = (sequelize) => {
-  class PcPart extends Model {}
+class PcPart extends Model {}
 
-  PcPart.init({
+PcPart.init(
+  {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -29,10 +29,11 @@ module.exports = (sequelize) => {
         allowNull: false,
     
     },
-  }, {
+  },
+  {
     sequelize,
     modelName: 'pcPart',
-  });
+  }
+);
 
-  return PcPart;
-};
+module.exports = PcPart;

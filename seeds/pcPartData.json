@@ -74,7 +74,7 @@
     {"name": "Gigabyte B560M DS3H", "description": "Motherboard", "priceRange": "budget", "averagePrice": ""},
     {"name": "MSI B550-A PRO", "description": "Motherboard", "priceRange": "budget", "averagePrice": ""},
     {"name": "ASRock B450M Steel Legend", "description": "Motherboard", "priceRange": "budget", "averagePrice": ""},
-    {"name": "ASUS PRIME B450M-A", "description": "Motherboard", "priceRange": "budget", "averagePrice": ""}
+    {"name": "ASUS PRIME B450M-A", "description": "Motherboard", "priceRange": "budget", "averagePrice": ""},
     
     {"name": "ASUS TUF Gaming X570-PLUS", "description": "Motherboard", "priceRange": "mid-range", "averagePrice": ""},
     {"name": "MSI MPG Z690 EDGE WIFI", "description": "Motherboard", "priceRange": "mid-range", "averagePrice": ""},
@@ -118,7 +118,7 @@
     {"name": "ADATA XPG Spectrix D60G 32GB (2 x 16GB) DDR4-3600", "description": "Memory", "priceRange": "mid-range", "averagePrice": ""},
     {"name": "Thermaltake TOUGHRAM RGB 32GB (2 x 16GB) DDR4-3600", "description": "Memory", "priceRange": "mid-range", "averagePrice": ""},
     {"name": "PNY XLR8 Gaming EPIC-X RGB 32GB (2 x 16GB) DDR4-3600", "description": "Memory", "priceRange": "mid-range", "averagePrice": ""},
-    {"name": "Silicon Power XPOWER Turbine RGB 32GB (2 x 16GB) DDR4-3600", "description": "Memory", "priceRange": "mid-range", "averagePrice": ""}
+    {"name": "Silicon Power XPOWER Turbine RGB 32GB (2 x 16GB) DDR4-3600", "description": "Memory", "priceRange": "mid-range", "averagePrice": ""},
   
     {"name": "Corsair Dominator Platinum RGB 64GB (2 x 32GB) DDR4-3600", "description": "Memory", "priceRange": "high-end", "averagePrice": ""},
     {"name": "G.Skill Trident Z Royal 64GB (2 x 32GB) DDR4-4000", "description": "Memory", "priceRange": "high-end", "averagePrice": ""},
