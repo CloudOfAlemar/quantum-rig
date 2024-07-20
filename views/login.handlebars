@@ -1,9 +1,9 @@
 
-  <div class="container centered-div">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Login</h2>
-        <form class="form login-form">
+  <div class="container-fluid centered-div login-container">
+    <div class="row justify-content-between">
+      <div class="login-form-border">
+        <h2 class="login-header">Login</h2>
+        <form class="form login-form p-0">
           <div class="form-group">
             <label for="email-login">Email:</label>
             <input class="form-input" type="text" id="email-login" />
@@ -13,13 +13,13 @@
             <input class="form-input" type="password" id="password-login" />
           </div>
           <div class="form-group">
-            <button class="btn btn-primary" type="submit">Login</button>
+            <button class="btn mt-4" id="login-btn" type="submit">Login</button>
           </div>
         </form>
       </div>
-      <div class="col-md-6">
-        <h2>Sign Up</h2>
-        <form class="form signup-form">
+      <div class="login-form-border">
+        <h2 class="signup-header">Sign Up</h2>
+        <form class="form signup-form p-0">
           <div class="form-group">
             <label for="name-signup">Name:</label>
             <input class="form-input" type="text" id="name-signup" />
@@ -33,7 +33,7 @@
             <input class="form-input" type="password" id="password-signup" />
           </div>
           <div class="form-group">
-            <button class="btn btn-primary" type="submit">Sign Up</button>
+            <button class="btn mt-4" id="signup-btn" type="submit">Sign Up</button>
           </div>
         </form>
       </div>
