@@ -24,6 +24,11 @@ module.exports = (sequelize) => {
         isIn: [['budget', 'mid-range', 'high-end']],
       },
     },
+    averagePrice: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    
+    },
   }, {
     sequelize,
     modelName: 'PcPart',

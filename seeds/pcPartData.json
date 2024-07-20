@@ -1,0 +1,327 @@
+[
+    {
+      "name": "AMD Ryzen 5 3600",
+      "description": "CPU",
+      "priceRange": "budget",
+      "averagePrice": 200
+    },
+    {
+      "name": "Intel Core i5-10400F",
+      "description": "CPU",
+      "priceRange": "budget",
+      "averagePrice": 170
+    },
+    {
+      "name": "AMD Ryzen 7 5800X",
+      "description": "CPU",
+      "priceRange": "mid-range",
+      "averagePrice": 350
+    },
+    {
+      "name": "Intel Core i7-10700K",
+      "description": "CPU",
+      "priceRange": "mid-range",
+      "averagePrice": 320
+    },
+    {
+      "name": "AMD Ryzen 9 5900X",
+      "description": "CPU",
+      "priceRange": "high-end",
+      "averagePrice": 500
+    },
+    {
+      "name": "Intel Core i9-10900K",
+      "description": "CPU",
+      "priceRange": "high-end",
+      "averagePrice": 550
+    },
+    {
+      "name": "Cooler Master Hyper 212 RGB",
+      "description": "CPU Cooler",
+      "priceRange": "budget",
+      "averagePrice": 60
+    },
+    {
+      "name": "be quiet! Pure Rock 2",
+      "description": "CPU Cooler",
+      "priceRange": "budget",
+      "averagePrice": 50
+    },
+    {
+      "name": "Noctua NH-D15",
+      "description": "CPU Cooler",
+      "priceRange": "mid-range",
+      "averagePrice": 100
+    },
+    {
+      "name": "Corsair iCUE H100i Elite Capellix",
+      "description": "CPU Cooler",
+      "priceRange": "mid-range",
+      "averagePrice": 180
+    },
+    {
+      "name": "NZXT Kraken X73",
+      "description": "CPU Cooler",
+      "priceRange": "high-end",
+      "averagePrice": 220
+    },
+    {
+      "name": "EK-AIO 360 D-RGB",
+      "description": "CPU Cooler",
+      "priceRange": "high-end",
+      "averagePrice": 240
+    },
+    {
+      "name": "ASUS TUF Gaming B550-PLUS",
+      "description": "Motherboard",
+      "priceRange": "budget",
+      "averagePrice": 130
+    },
+    {
+      "name": "MSI MAG B550 TOMAHAWK",
+      "description": "Motherboard",
+      "priceRange": "budget",
+      "averagePrice": 140
+    },
+    {
+      "name": "Gigabyte X570 AORUS ELITE",
+      "description": "Motherboard",
+      "priceRange": "mid-range",
+      "averagePrice": 180
+    },
+    {
+      "name": "ASRock X570 Phantom Gaming 4",
+      "description": "Motherboard",
+      "priceRange": "mid-range",
+      "averagePrice": 160
+    },
+    {
+      "name": "ASUS ROG CROSSHAIR VIII HERO",
+      "description": "Motherboard",
+      "priceRange": "high-end",
+      "averagePrice": 350
+    },
+    {
+      "name": "MSI MEG Z590 ACE",
+      "description": "Motherboard",
+      "priceRange": "high-end",
+      "averagePrice": 400
+    },
+    {
+      "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz",
+      "description": "Memory",
+      "priceRange": "budget",
+      "averagePrice": 70
+    },
+    {
+      "name": "G.Skill Ripjaws V 16GB (2x8GB) DDR4 3200MHz",
+      "description": "Memory",
+      "priceRange": "budget",
+      "averagePrice": 75
+    },
+    {
+      "name": "Corsair Vengeance RGB Pro 16GB (2x8GB) DDR4 3600MHz",
+      "description": "Memory",
+      "priceRange": "mid-range",
+      "averagePrice": 120
+    },
+    {
+      "name": "G.Skill Trident Z RGB 16GB (2x8GB) DDR4 3600MHz",
+      "description": "Memory",
+      "priceRange": "mid-range",
+      "averagePrice": 130
+    },
+    {
+      "name": "Corsair Dominator Platinum RGB 32GB (2x16GB) DDR4 3600MHz",
+      "description": "Memory",
+      "priceRange": "high-end",
+      "averagePrice": 300
+    },
+    {
+      "name": "G.Skill Trident Z Royal 32GB (2x16GB) DDR4 3600MHz",
+      "description": "Memory",
+      "priceRange": "high-end",
+      "averagePrice": 320
+    },
+    {
+      "name": "Samsung 970 EVO Plus 500GB NVMe",
+      "description": "Storage",
+      "priceRange": "budget",
+      "averagePrice": 80
+    },
+    {
+      "name": "WD Blue SN550 500GB NVMe",
+      "description": "Storage",
+      "priceRange": "budget",
+      "averagePrice": 70
+    },
+    {
+      "name": "Samsung 980 Pro 1TB NVMe",
+      "description": "Storage",
+      "priceRange": "mid-range",
+      "averagePrice": 130
+    },
+    {
+      "name": "WD Black SN750 1TB NVMe",
+      "description": "Storage",
+      "priceRange": "mid-range",
+      "averagePrice": 120
+    },
+    {
+      "name": "Samsung 980 Pro 2TB NVMe",
+      "description": "Storage",
+      "priceRange": "high-end",
+      "averagePrice": 250
+    },
+    {
+      "name": "WD Black SN850 2TB NVMe",
+      "description": "Storage",
+      "priceRange": "high-end",
+      "averagePrice": 270
+    },
+    {
+      "name": "MSI GeForce GTX 1660 SUPER GAMING X",
+      "description": "Video GPU",
+      "priceRange": "budget",
+      "averagePrice": 250
+    },
+    {
+      "name": "ASUS TUF Gaming GeForce GTX 1650 SUPER",
+      "description": "Video GPU",
+      "priceRange": "budget",
+      "averagePrice": 200
+    },
+    {
+      "name": "ASUS ROG Strix GeForce RTX 3060 OC Edition",
+      "description": "Video GPU",
+      "priceRange": "mid-range",
+      "averagePrice": 350
+    },
+    {
+      "name": "Gigabyte GeForce RTX 3060 Ti GAMING OC",
+      "description": "Video GPU",
+      "priceRange": "mid-range",
+      "averagePrice": 400
+    },
+    {
+      "name": "Gigabyte AORUS GeForce RTX 3080 MASTER",
+      "description": "Video GPU",
+      "priceRange": "high-end",
+      "averagePrice": 700
+    },
+    {
+      "name": "XFX Speedster MERC319 Radeon RX 6900 XT",
+      "description": "Video GPU",
+      "priceRange": "high-end",
+      "averagePrice": 800
+    },
+    {
+      "name": "NZXT H510",
+      "description": "Case",
+      "priceRange": "budget",
+      "averagePrice": 70
+    },
+    {
+      "name": "Cooler Master MasterBox Q300L",
+      "description": "Case",
+      "priceRange": "budget",
+      "averagePrice": 60
+    },
+    {
+      "name": "NZXT H510 Elite",
+      "description": "Case",
+      "priceRange": "mid-range",
+      "averagePrice": 150
+    },
+    {
+      "name": "Cooler Master MasterCase H500",
+      "description": "Case",
+      "priceRange": "mid-range",
+      "averagePrice": 160
+    },
+    {
+      "name": "NZXT H710",
+      "description": "Case",
+      "priceRange": "high-end",
+      "averagePrice": 200
+    },
+    {
+      "name": "Cooler Master Cosmos C700P",
+      "description": "Case",
+      "priceRange": "high-end",
+      "averagePrice": 330
+    },
+    {
+      "name": "Corsair CX550M 550W 80+ Bronze",
+      "description": "Power Supply",
+      "priceRange": "budget",
+      "averagePrice": 70
+    },
+    {
+      "name": "EVGA 600 W1 80+ White",
+      "description": "Power Supply",
+      "priceRange": "budget",
+      "averagePrice": 50
+    },
+    {
+      "name": "Corsair RM650x 650W 80+ Gold",
+      "description": "Power Supply",
+      "priceRange": "mid-range",
+      "averagePrice": 100
+    },
+    {
+      "name": "EVGA SuperNOVA 650 G5 80+ Gold",
+      "description": "Power Supply",
+      "priceRange": "mid-range",
+      "averagePrice": 110
+    },
+    {
+      "name": "Corsair HX750 750W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 150
+    },
+    {
+      "name": "EVGA SuperNOVA 750 P2 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 160
+    },
+    {
+      "name": "Thermaltake Toughpower PF1 750W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 170
+    },
+    {
+      "name": "Cooler Master V850 850W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 180
+    },
+    {
+      "name": "Seasonic PRIME Ultra 850W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 190
+    },
+    {
+      "name": "Antec Signature 1000W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 210
+    },
+    {
+      "name": "Gigabyte AORUS P850W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 180
+    },
+    {
+      "name": "Rosewill Hercules 1600W 80+ Platinum",
+      "description": "Power Supply",
+      "priceRange": "high-end",
+      "averagePrice": 250
+    }
+  ]
+  
