@@ -9,13 +9,19 @@
   --pink : hsla( 313, 99%, 48%, 1 );
 }
 
-.hero {
+.hero,
+.login-container {
   background: url( "../img/quantum-rig-bg.svg" );
   min-height: 100vh; /* Extend to the bottom of the page */
   background-size: cover;
   background-position: 60% 0%;
   background-repeat: no-repeat;
   padding-top: 75px;
+}
+
+.login-container {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .hero-content {
@@ -31,19 +37,29 @@
   color: var( --blue );
 }
 
-#login-btn {
+#landing-page-login-btn {
   background-color: transparent;
   border: 2px solid var( --red );
   color: var( --light-blue );
 }
 
-#login-btn:hover {
+#landing-page-login-btn:hover {
   background-color: var( --red );
 }
 
-#forge-btn {
+#forge-btn,
+#login-btn,
+#signup-btn {
   background-color: var( --red );
-  color: var( --light-blue );
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 5%;
+}
+
+#login-btn,
+#signup-btn {
+  width: 30%;
 }
 
 #forge-btn:hover {
@@ -67,14 +83,24 @@
   );
 }
 
+.login-header,
+.signup-header {
+  color: white;
+}
+
+.form {
+  color: white;
+}
+
+.login-form-border {
+  border: 0.5px solid white;
+  padding: 2rem;
+  width: 48%;
+  border-radius: 5%;
+}
 
 /*
   Review code to make sure styles don't conflict
-
-h2 {
-  color: white;body {
-  font-family: Arial, sans-serif;
-}
 
 .container {
   max-width: 100%;
@@ -100,12 +126,6 @@ h2 {
 
 h2 {
   color: #333;
-}
-
-.form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
 }
 
 .form-group {
