@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const path = require( "path" );
-require( "dotenv" ).config( { path : path.resolve( __dirname, "../.env" ) } );
-// require('dotenv').config();
+// const path = require( "path" );
+// require( "dotenv" ).config( { path : path.resolve( __dirname, "../.env" ) } );
+require('dotenv').config();
 
 
 let sequelize;
