@@ -1,0 +1,33 @@
+const { Model, DataTypes } = require('sequelize');
+
+module.exports = (sequelize) => {
+  class PcPart extends Model {}
+
+  PcPart.init({
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+      allowNull: false,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+    },
+    priceRange: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isIn: [['budget', 'mid-range', 'high-end']],
+      },
+    },
+  }, {
+    sequelize,
+    modelName: 'PcPart',
+  });
+
+  return PcPart;
+};
