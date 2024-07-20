@@ -19,8 +19,10 @@ const seedDatabase = async () => {
     });
   };
 
-  const parts = await Part.bulkCreate(part_data);
-
+  const parts = await Part.bulkCreate(part_data, {
+    individualHooks: true,
+    returning: true
+  });
   process.exit(0);
 };
 

@@ -6,3 +6,14 @@
     <button class="btn btn-primary">PC BUILD</button>
   </p>
 </div>
+
+{{#if parts}}
+  <table class="table table-success table-striped">
+    {{#each parts as |part|}}
+    <tr>
+      <th>{{part.description}}</th>
+      <td>{{part.name}}</td>
+    </tr>
+    {{/each}}
+  </table>
+{{/if}}
