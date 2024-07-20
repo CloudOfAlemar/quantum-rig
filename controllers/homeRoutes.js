@@ -2,7 +2,15 @@ const router = require('express').Router();
 const { PcBuild, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get( "/", async ( req, res ) => {
+  try {
+    res.render( "landingPage" );
+  } catch( error ) {
+    res.status( 500 ).json( { error } );
+  }
+} );
+
+router.get('/builds', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const pcBuildData = await PcBuild.findAll({
@@ -18,7 +26,7 @@ router.get('/', async (req, res) => {
     const pcBuilds = pcBuildData.map((pcBuild) => pcBuild.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('builds', { 
       pcBuilds, 
       logged_in: req.session.logged_in 
     });
@@ -26,6 +34,17 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+/*
+  Creating Forge Routes ( Where we will build our PC )
+*/
+router.get( "/forge", async ( req, res ) => {
+  try {
+    res.render( "forge" );
+  } catch( error ) {
+    res.status( 500 ).json( { error } );
+  }
+} );
 
 router.get('/pcBuilds/:id', async (req, res) => {
   try {
@@ -53,7 +72,7 @@ router.get('/pcBuilds/:id', async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const guestData = await Guest.findByPk(req.session.guest_id, {
@@ -63,7 +82,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const guest = guestData.get({ plain: true });
     console.log(JSON.stringify(guest));
-    res.render('profile', {
+    res.render('dashboard', {
       ...guest,
       logged_in: true
     });

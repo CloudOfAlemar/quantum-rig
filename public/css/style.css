@@ -13,9 +13,50 @@
   background: url( "../img/quantum-rig-bg.svg" );
   min-height: 100vh; /* Extend to the bottom of the page */
   background-size: cover;
-  background-position: center;
+  background-position: 60% 0%;
   background-repeat: no-repeat;
+  padding-top: 75px;
 }
+
+.hero-content {
+  background-color: hsla( 0, 0%, 0%, 0.75 );
+  border-radius: 10px;
+  max-width: 290px;
+  padding: 1.5rem;
+}
+
+.hero-heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: var( --blue );
+}
+
+#login-btn {
+  background-color: transparent;
+  border: 2px solid var( --red );
+  color: var( --light-blue );
+}
+
+#login-btn:hover {
+  background-color: var( --red );
+}
+
+#forge-btn {
+  background-color: var( --red );
+  color: var( --light-blue );
+}
+
+#forge-btn:hover {
+  background-color: hsla( 336, 98%, 35%, 1 );
+}
+
+.footer {
+  padding: 2rem;
+}
+
+/*
+  Forge Styles
+*/
 
 /* Color Utility Classes */
 .bg-purple-pink-gradient {
@@ -25,6 +66,10 @@
     var( --red )
   );
 }
+
+
+/*
+  Review code to make sure styles don't conflict
 
 h2 {
   color: white;body {
@@ -87,7 +132,7 @@ h2 {
 .btn:hover {
   background-color: #0056b3;
 }
-
+*/
 /* Media Queries for larger screens */
 @media(min-width: 768px) {
   .col-md-6 {
@@ -119,6 +164,20 @@ h2 {
   }
 }
 
-.form-group {
-  color: white;
+
+/* Media Queries: Breakpoints */
+@media screen and ( min-width: 992px ) {
+  .hero {
+    height: 750px;
+    padding: 8rem 4rem 4rem 4rem ;
+  }
+
+  .hero-content {
+    max-width: 400px;
+    padding: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 50px;
+  }
 }
