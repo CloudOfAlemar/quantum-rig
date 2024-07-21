@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace('/dashboard');
     } else {
-      alert(response.statusText);
+      alert('Failed to log in.' + response.statusText);
     }
   }
 };
@@ -37,9 +37,9 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/dashboard');
     } else {
-      alert(response.statusText);
+      alert('Failed to sign up.' + response.statusText);
     }
   }
 };
@@ -47,7 +47,6 @@ const signupFormHandler = async (event) => {
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
-
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
