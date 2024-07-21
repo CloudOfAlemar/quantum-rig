@@ -16,6 +16,7 @@
   background-position: 60% 0%;
   background-repeat: no-repeat;
   padding-top: 75px;
+  color: var( --light-blue );
 }
 
 .login-container {
@@ -44,6 +45,7 @@
 
 #landing-page-login-btn:hover {
   background-color: var( --red );
+  border-radius: 5%;
 }
 
 #forge-btn,
@@ -92,10 +94,10 @@
 }
 
 .login-form-border {
-  border: 0.5px solid white;
+  border: 0.1px solid white;
   padding: 2rem;
   width: 48%;
-  border-radius: 5%;
+  border-radius: 3%;
 }
 
 /*
@@ -152,6 +154,7 @@ h2 {
   background-color: #0056b3;
 }
 */
+
 /* Media Queries for larger screens */
 @media(min-width: 768px) {
   .col-md-6 {
@@ -160,7 +163,6 @@ h2 {
   }
 }
 
-}
 
 /* Additional Media Queries for different screen sizes */
 @media(min-width: 30rem) { /* 480px equivalent */
