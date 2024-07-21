@@ -61,7 +61,7 @@ router.get('/pcBuilds/:id', async (req, res) => {
     });
 
     const pcBuild = pcBuildData.get({ plain: true });
-
+    console.log(JSON.stringify(pcBuild));
     res.render('pcBuild', {
       ...pcBuild,
       logged_in: req.session.logged_in

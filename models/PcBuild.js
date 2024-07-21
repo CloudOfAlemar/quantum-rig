@@ -18,6 +18,11 @@ PcBuild.init(
     personal_comments: {
       type: DataTypes.STRING,
     },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
     guest_id: {
       type: DataTypes.INTEGER,
       references: {

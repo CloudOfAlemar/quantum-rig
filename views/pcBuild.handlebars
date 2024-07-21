@@ -1,8 +1,17 @@
 <div class="text-center">
   <h2>{{name}}</h2>
   <p>{{personal_comments}}</p>
-  <p>Created by {{guest.name}}</p>
+  <p>Created by {{guest.name}} on {{format_date date_created}}</p>
   <p>
     <button class="btn btn-primary">PC BUILD</button>
   </p>
 </div>
+{{#if parts}}
+<table>
+{{#each parts as |part|}}
+  <tr>
+    <td>{{part.name}}</td>
+  </tr>
+{{/each}}
+</table>
+{{/if}}

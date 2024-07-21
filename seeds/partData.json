@@ -6,16 +6,16 @@
       "pc_build_id:": 1
     },
     {
-        "name": "RTX 4090",
-        "description": "Nvidia made",
-        "price": 24.99,
-        "pc_build_id:": 1
+      "name": "RTX 4090",
+      "description": "Nvidia made",
+      "price": 24.99,
+      "pc_build_id:": 1
     },
     {
-        "name": "Corsair 128GB DDR5 RAM 6400mhz 2x64 Gb",
-        "description": "Corsair made",
-        "price": 14.99,
-        "pc_build_id:": 1
+      "name": "Corsair 128GB DDR5 RAM 6400mhz 2x64 Gb",
+      "description": "Corsair made",
+      "price": 14.99,
+      "pc_build_id:": 1
     }
   ]
   
