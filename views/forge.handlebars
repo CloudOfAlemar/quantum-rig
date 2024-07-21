@@ -11,9 +11,67 @@
   </div>
 
   <div class="row">
-    <div class="col-12">
-     
-    </div>
-  </div>
+
+    {{#each partsArray as |part|}}
+      {{!-- Part Column --}}
+      <div class="col-12">
+      <div class="card">
+          <div class="card-header">
+
+            {{!-- Button: Trigger Modal --}}
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{part.name}}exampleModalCenter">
+              Add {{part.name}} +
+            </button>
+
+            {{!-- Modal --}}
+            <div class="modal fade" id="{{part.name}}exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="{{part.name}}exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">{{part.name}} Parts</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Budget</h5>
+                    <hr>
+                      {{#each part.parts.budget.parts as |pcPart|}}
+                        <div class="pc-part-wrapper mb-4">
+                          <p class="mb-2">{{pcPart}}</p>
+                          <button class="btn btn-success pc-part-btn" data-dismiss="modal">Add +</button>
+                        </div>
+                      {{/each}}
+                    <h5>Mid-Ranged</h5>
+                    <hr>
+                      {{#each part.parts.mid-Range.parts as |pcPart|}}
+                        <div class="pc-part-wrapper mb-4">
+                          <p class="mb-2">{{pcPart}}</p>
+                          <button class="btn btn-success pc-part-btn" data-dismiss="modal">Add +</button>
+                        </div>
+                      {{/each}}
+                    <h5>High-End</h5>
+                    <hr>
+                      {{#each part.parts.high-end.parts as |pcPart|}}
+                        <div class="pc-part-wrapper mb-4">
+                          <p class="mb-2">{{pcPart}}</p>
+                          <button class="btn btn-success pc-part-btn" data-dismiss="modal">Add +</button>
+                        </div>
+                      {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body">
+            <p class="card-text">Name: <span class="part-selected">Not selected</span></p>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+
+  </div> {{!-- End Of Row --}}
   
 </div>

@@ -77,6 +77,10 @@
   Forge Styles
 */
 
+.modal {
+  color: black;
+}
+
 /* Color Utility Classes */
 .bg-purple-pink-gradient {
   background: linear-gradient(
