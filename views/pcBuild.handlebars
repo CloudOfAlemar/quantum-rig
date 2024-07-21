@@ -6,12 +6,35 @@
     <button class="btn btn-primary">PC BUILD</button>
   </p>
 </div>
+
 {{#if parts}}
-<table>
-{{#each parts as |part|}}
-  <tr>
-    <td>{{part.name}}</td>
-  </tr>
-{{/each}}
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Amazon Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each parts as |part|}}
+    <tr>
+      <td>{{part.description}}</td>
+      <td>{{part.name}}</td>
+      <td>{{part.price}}</td>
+      <td onclick=`redirectLink({{part.name}})`>{{part.name}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
 </table>
+
+{{!-- <script>
+function redirectLink(part_name) {
+    console.log(part_name + "DFDSFDS");
+    window.location.replace(`https://www.amazon.com/s?k=${part_name}`)
+}
+</script> --}}
+
 {{/if}}
+{{!-- https://www.amazon.com/s?k=i9+12900k --}}
