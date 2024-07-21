@@ -9,9 +9,10 @@
   --pink : hsla( 313, 99%, 48%, 1 );
 }
 
-.hero {
+.hero,
+.login-container {
   background: url( "../img/quantum-rig-bg.svg" );
-  min-height: 83vh; /* Extend to the bottom of the page */
+  min-height: 100vh; /* Extend to the bottom of the page */
   background-size: cover;
   background-position: 60% 0%;
   background-repeat: no-repeat;
