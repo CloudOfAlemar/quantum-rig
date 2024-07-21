@@ -23,18 +23,10 @@
       <td>{{part.description}}</td>
       <td>{{part.name}}</td>
       <td>{{part.price}}</td>
-      <td onclick=`redirectLink({{part.name}})`>{{part.name}}</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
     </tr>
     {{/each}}
   </tbody>
 </table>
 
-{{!-- <script>
-function redirectLink(part_name) {
-    console.log(part_name + "DFDSFDS");
-    window.location.replace(`https://www.amazon.com/s?k=${part_name}`)
-}
-</script> --}}
-
 {{/if}}
-{{!-- https://www.amazon.com/s?k=i9+12900k --}}
