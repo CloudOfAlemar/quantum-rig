@@ -15,6 +15,13 @@ Part.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isIn: ["CPU", "GPU", "Motherboard", "PSU", "CPU Cooler", "RAM", "SSD"]
+      }
+    },
     description: {
       type: DataTypes.STRING,
     },

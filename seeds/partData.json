@@ -1,18 +1,49 @@
 [
     {
       "name": "i9-12900k",
+      "type": "CPU",
       "description": "Intel made",
       "price": 14.99,
       "pc_build_id": 1
     },
     {
       "name": "RTX 4090",
+      "type": "GPU",
       "description": "Nvidia made",
       "price": 24.99,
       "pc_build_id": 1
     },
     {
       "name": "Corsair 128GB DDR5 RAM 6400mhz 2x64 Gb",
+      "type": "RAM",
+      "description": "Corsair made",
+      "price": 14.99,
+      "pc_build_id": 1
+    },
+    {
+      "name": "Gigabyte Aorus Z790 Master",
+      "type": "Motherboard",
+      "description": "Corsair made",
+      "price": 14.99,
+      "pc_build_id": 1
+    },
+    {
+      "name": "Corsair 1200HX Platinum Power Supply",
+      "type": "PSU",
+      "description": "Corsair made 1200 watts of power",
+      "price": 14.99,
+      "pc_build_id": 1
+    },
+    {
+      "name": "1 TB Samsung 990 PRO NVME SSD M.2",
+      "type": "SSD",
+      "description": "1 TB NVME of super fast storage",
+      "price": 14.99,
+      "pc_build_id": 1
+    },
+    {
+      "name": "Corsair ICue Link H115i 280mm RGB CPU AIO Cooler",
+      "type": "CPU Cooler",
       "description": "Corsair made",
       "price": 14.99,
       "pc_build_id": 1
