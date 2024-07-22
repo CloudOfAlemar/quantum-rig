@@ -78,6 +78,10 @@
   Forge Styles
 */
 
+.card-text {
+  color: black;
+}
+
 .modal {
   color: black;
 }
@@ -197,6 +201,10 @@ h2 {
   .hero {
     height: 750px;
     padding: 8rem 4rem 4rem 4rem ;
+  }
+
+  .forge-hero {
+    height: auto;
   }
 
   .hero-content {
