@@ -111,24 +111,6 @@ router.get('/logout', withAuth, (req, res) => {
   }
 });
 
-router.get('/profile', withAuth, async (req, res) => {
-  try {
-    const guestData = await Guest.findByPk(req.session.guest_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: PcBuild }],
-    });
-
-    const guest = guestData.get({ plain: true });
-
-    res.render('profile', {
-      ...guest,
-      logged_in: true
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-} 
-);
 
 router.get('/signup', (req, res) => {
   res.render('signup');

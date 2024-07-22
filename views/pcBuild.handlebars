@@ -1,14 +1,10 @@
-<div class="text-center hero">
+<div class="text-center hero hero-pcBuild">
   <h2>{{name}}</h2>
   <p>{{personal_comments}}</p>
   <p>Created by {{guest.name}} on {{format_date date_created}}</p>
-  <p>
-    <button class="btn btn-primary">PC BUILD</button>
-  </p>
-</div>
 
 {{#if parts}}
-<table class="table table-dark table-striped">
+<table class="table table-dark table-striped my-5 py-5">
   <thead>
     <tr>
       <th scope="col">Type</th>
@@ -32,3 +28,6 @@
 </table>
 
 {{/if}}
+</div>
+
+

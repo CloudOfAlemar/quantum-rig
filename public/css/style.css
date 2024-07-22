@@ -204,4 +204,8 @@ h2 {
   .hero-heading {
     font-size: 50px;
   }
+
+  .hero-pcBuild {
+    height: auto;
+  }
 }
