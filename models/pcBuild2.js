@@ -1,3 +1,4 @@
+// i had some weird conflicts so i had to make this pcBuild2 
 const { Model, DataTypes } = require('sequelize');
 
 class PcBuild extends Model {}
