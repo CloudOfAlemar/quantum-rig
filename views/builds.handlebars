@@ -8,7 +8,8 @@
             <!-- Call helper function with triple brackets to render the emoji span as HTML -->
             <a href='/pcBuilds/{{pcBuild.id}}'>{{pcBuild.name}}</a>
           </h2>
-          <p> {{pcBuild.pcPartsList}} </p>
+          <p>PC Parts List (JSON):</p>
+          <pre>{{stringify pcBuild.pcPartsList}}</pre>
           <p>Created by {{pcBuild.email}}</p>
         </div>
         <div class='col-md-7'>
