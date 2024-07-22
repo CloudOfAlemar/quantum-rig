@@ -1,5 +1,4 @@
 
-const sequelize = require('../config/connection');
 
 // old stuff
 // const User = require('./User');
@@ -7,9 +6,9 @@ const sequelize = require('../config/connection');
 
 
 //new stuff; some wierd casing stuff will fix later
-const Guest = require('./Guest')(sequelize);
-const PcPart = require('./PcPart')(sequelize);
-const PcBuild = require('./pcBuild2')(sequelize);
+const Guest = require('./Guest');
+const PcPart = require('./PcPart');
+const PcBuild = require('./pcBuild2');
 
 
 // Associations
@@ -17,13 +16,13 @@ Guest.hasMany(PcBuild, { foreignKey: 'userId', onDelete: 'CASCADE' });
 PcBuild.belongsTo(Guest, { foreignKey: 'userId' });
 
 //old stuff
-Guest.hasMany(Project, {
+Guest.hasMany(PcBuild, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Part.belongsTo(PcBuild, {
+PcPart.belongsTo(PcBuild, {
   foreignKey: 'pc_build_id'
 });
 
-module.exports = { Guest, PcPart, Project, PcBuild };
+module.exports = { Guest, PcPart, PcBuild, PcBuild };
