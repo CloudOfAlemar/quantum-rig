@@ -1,17 +1,21 @@
 [
-  {
-    "name": "For Fortnite",
-    "personal_comments": "Christmas present for myself",
-    "guest_id": 1
-  },
-  {
-    "name": "For Dota 2",
-    "personal_comments": "New Years present for myself",
-    "guest_id": 2
-  },
-  {
-    "name": "For League of Legends",
-    "personal_comments": "Back To School present for myself",
-    "guest_id": 3
-  }
+    {"id": 0, 
+    "name": "testBuild",
+    "email": "email@email.com",
+    "pcPartsList": [
+        {
+            "cpu": 0,
+            "cpu cooler": 15,
+            "motherboard": 30,
+            "memory": 45,
+            "storage": 101,
+            "video GPU": 60,
+            "case": 75,
+            "PSU": 111
+        }
+    ],
+    "comments": "this is a test",
+    "isPublic": true
+    }
+
 ]
