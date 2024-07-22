@@ -11,5 +11,22 @@ const selectingPartsHandler = event => {
   }
 }
 
+const buildPCHandler = async event => {
+  const buildName = document.querySelector( "#build-name" ).value.trim();
+  const buildComments = document.querySelector( "#build-comments" ).value.trim();
+  console.log( buildName );
+  console.log( buildComments );
+}
+
+const forgeFormHandler = event => {
+  event.preventDefault();
+}
+
 document.querySelector( ".pc-part-cards-row" )
 .addEventListener( "click", selectingPartsHandler );
+
+document.querySelector( ".forge-form" )
+.addEventListener( "submit", forgeFormHandler );
+
+document.querySelector( ".build-pc-btn" )
+.addEventListener( "click", buildPCHandler );
