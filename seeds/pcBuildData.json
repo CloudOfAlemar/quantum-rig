@@ -1,0 +1,21 @@
+[
+    {"id": 0, 
+    "name": "testBuild",
+    "email": "email@email.com",
+    "pcPartsList": [
+        {
+            "cpu": 0,
+            "cpu cooler": 15,
+            "motherboard": 30,
+            "memory": 45,
+            "storage": 101,
+            "video GPU": 60,
+            "case": 75,
+            "PSU": 111
+        }
+    ],
+    "comments": "this is a test",
+    "isPublic": true
+    }
+
+]

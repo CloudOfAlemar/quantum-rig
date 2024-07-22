@@ -9,31 +9,31 @@ PcBuild.init(
         autoIncrement: true,
         primaryKey: true,
       },
-      name: {
+    name: {
         type: DataTypes.STRING,
         allowNull: false,
-      },
-      email: {
+    },
+    email: {
         type: DataTypes.STRING,
         allowNull: false,
-      },
-      pcPartsList: {
+    },
+    pcPartsList: {
         type: DataTypes.JSONB,
         allowNull: false,
-      },
-      comments: {
-          type: DataTypes.STRING,
-          allowNull: true,
-        },
-      isPublic: {
+    },
+    comments: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    isPublic: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-      },
-      date_created: {
-          type: DataTypes.DATE,
-          allowNull: false,
-          defaultValue: DataTypes.NOW,
-        },
+    },
+    date_created: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW,
+    },
   },
   {
     sequelize,
