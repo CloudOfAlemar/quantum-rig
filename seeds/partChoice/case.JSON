@@ -5,12 +5,8 @@
             "Cooler Master MasterBox Q300L",
             "Corsair 4000D Airflow",
             "Phanteks Eclipse P300A",
-            "Fractal Design Meshify C",
-            "Thermaltake Versa H18",
-            "Lian Li Lancool 215",
-            "SilverStone FARA R1",
-            "Deepcool Matrexx 55 V3",
-            "BitFenix Nova Mesh"
+            "Fractal Design Meshify C"
+
     ]
     },
     "mid-Range": {
@@ -19,12 +15,7 @@
             "Corsair iCUE 4000X RGB",
             "Fractal Design Define R6",
             "Phanteks Enthoo Pro M",
-            "Cooler Master MasterCase H500",
-            "Lian Li PC-O11 Dynamic",
-            "Thermaltake S500 TG",
-            "SilverStone Redline RL06",
-            "Deepcool CL500",
-            "Corsair 275R Airflow"
+            "Cooler Master MasterCase H500"
     ]
     },
     "high-end": {
@@ -33,12 +24,7 @@
             "NZXT H700i",
             "Lian Li PC-O11 Dynamic XL",
             "Cooler Master Cosmos C700M",
-            "Phanteks Evolv X",
-            "Thermaltake Level 20 GT RGB",
-            "SilverStone Temjin TJ11",
-            "Fractal Design Define 7 XL",
-            "Corsair 680X RGB",
-            "Be Quiet! Dark Base Pro 900"
+            "Phanteks Evolv X"
     ]
     }
 }]

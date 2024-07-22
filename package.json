@@ -25,5 +25,5 @@
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
   },
-  "description": ""
+  "description": "Quantum Rig is a full-stack web application that allows users to create and manage custom PC builds. Users can sign up, log in, and create personalized PC builds by selecting and commenting on various parts."
 }
