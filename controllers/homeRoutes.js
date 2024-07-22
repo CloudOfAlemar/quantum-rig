@@ -101,4 +101,38 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/logout', withAuth, (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.redirect('/');
+    });
+  } else {
+    res.status(404).end();
+  }
+});
+
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    const guestData = await Guest.findByPk(req.session.guest_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: PcBuild }],
+    });
+
+    const guest = guestData.get({ plain: true });
+
+    res.render('profile', {
+      ...guest,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+} 
+);
+
+router.get('/signup', (req, res) => {
+  res.render('signup');
+} 
+);
+
 module.exports = router;

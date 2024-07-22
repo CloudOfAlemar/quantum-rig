@@ -43,7 +43,10 @@ Guest.init(
         return newGuestData;
       },
       beforeUpdate: async (updatedGuestData) => {
-        updatedGuestData.password = await bcrypt.hash(updatedGuestData.password, 10);
+        updatedGuestData.password = await bcrypt.hash(
+          updatedGuestData.password,
+          10
+        );
         return updatedGuestData;
       },
     },

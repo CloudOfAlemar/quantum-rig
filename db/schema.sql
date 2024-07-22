@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS giga_rig_maker_db;
-CREATE DATABASE giga_rig_maker_db;
+DROP DATABASE IF EXISTS quantum_rig_db;
+CREATE DATABASE quantum_rig_db;
