@@ -1,15 +1,15 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { PcBuild } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newPcBuild = await PcBuild.create({
       ...req.body,
-      user_id: req.session.user_id,
+      guest_id: req.session.guest_id,
     });
 
-    res.status(200).json(newProject);
+    res.status(200).json(newPcBuild);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -17,19 +17,19 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const projectData = await Project.destroy({
+    const pcBuildData = await PcBuild.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        guest_id: req.session.guest_id,
       },
     });
 
-    if (!projectData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+    if (!pcBuildData) {
+      res.status(404).json({ message: 'No PC Build found with this id!' });
       return;
     }
 
-    res.status(200).json(projectData);
+    res.status(200).json(pcBuildData);
   } catch (err) {
     res.status(500).json(err);
   }

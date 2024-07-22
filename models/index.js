@@ -20,8 +20,8 @@ User.hasMany(Project, {
   onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
-  foreignKey: 'user_id'
+Part.belongsTo(PcBuild, {
+  foreignKey: 'pc_build_id'
 });
 
 module.exports = { User, PcPart, Project, PcBuild };
