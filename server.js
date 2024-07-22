@@ -25,11 +25,17 @@ const sess = {
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
-    db: sequelize
-  })
+    db: sequelize,
+  }),
 };
 
 app.use(session(sess));
+
+// Middleware to make the logged_in variable available to all templates
+app.use((req, res, next) => {
+  res.locals.logged_in = req.session.logged_in;
+  next();
+});
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
