@@ -7,7 +7,7 @@
 //new stuff; some wierd casing stuff will fix later
 const User = require('./User')(sequelize);
 const PcPart = require('./PcPart')(sequelize);
-const PcBuild = require('./pcBuild')(sequelize);
+const PcBuild = require('./pcBuild2')(sequelize);
 
 
 // Associations
