@@ -1,3 +1,9 @@
+// morgan server log
+
+const express = require('express');
+const morgan = require('morgan');
+
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -10,6 +16,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
@@ -30,6 +39,9 @@ const sess = {
 };
 
 app.use(session(sess));
+
+// Use morgan for logging
+app.use(morgan('combined')); // You can use 'combined', 'common', 'dev', or 'short' formats
 
 // Middleware to make the logged_in variable available to all templates
 app.use((req, res, next) => {
