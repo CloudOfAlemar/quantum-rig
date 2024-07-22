@@ -38,6 +38,10 @@
 
 #landing-page-login-btn {
   background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 5%;
   border: 2px solid var(--red);
   color: var(--light-blue);
 }
@@ -73,6 +77,14 @@
 /*
   Forge Styles
 */
+
+.card-text {
+  color: black;
+}
+
+.modal {
+  color: black;
+}
 
 /* Color Utility Classes */
 .bg-purple-pink-gradient {
@@ -194,6 +206,10 @@ h2 {
   .hero {
     height: 750px;
     padding: 8rem 4rem 4rem 4rem;
+  }
+
+  .forge-hero {
+    height: auto;
   }
 
   .hero-content {
