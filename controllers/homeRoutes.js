@@ -22,7 +22,11 @@ const partsArray = [
   { name : "Storage", parts : storageParts[ 0 ] }
 ];
 
-console.log( partsArray[0].parts );
+console.log( partsArray[ 0 ] );
+console.log( partsArray[ 0 ].parts );
+console.log( partsArray[ 0 ].parts.budget );
+console.log( partsArray[ 0 ].parts.budget.parts );
+
 
 router.get( "/", async ( req, res ) => {
   try {

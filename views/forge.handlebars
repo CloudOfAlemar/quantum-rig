@@ -49,7 +49,11 @@
                     <hr>
                       {{#each part.parts.budget.parts as |pcPart|}}
                         <div class="pc-part-wrapper mb-4">
+                          {{!-- {{pcPart.name}} --}}
                           <p class="mb-2 pc-part-title">{{pcPart}}</p>
+                          {{!-- <p class="mb-2 pc-part-avg-price">{{pcPart.averagePrice}}</p> --}}
+
+                          {{!-- data-pcPartId="{{pcPart.id}}" --}}
                           <button class="btn btn-success pc-part-btn" data-dismiss="modal">Add +</button>
                         </div>
                       {{/each}}
