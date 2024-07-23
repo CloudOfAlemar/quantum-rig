@@ -41,7 +41,7 @@ router.get( "/pc-parts", async ( req, res ) => {
     const partData = await PcPart.findAll();
     const parts = partData.map( part => part.get( { plain : true } ) );
     console.log( parts );
-    res.render( "builds", { parts } );
+    res.render( "pcParts", { parts } );
   } catch( error ) {
     res.status( 500 ).json( { error } );
   }

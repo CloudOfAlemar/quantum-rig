@@ -1,0 +1,28 @@
+
+<div class="container-fluid pc-parts-hero hero">
+
+  <table class="table table-dark table-striped my-5 py-5">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Amazon Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each parts as |part|}}
+      <tr>
+        <td>{{part.type}}</td>
+        <td>{{part.name}}</td>
+        <td>{{part.description}}</td>
+        <td>{{part.price}}</td>
+        <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+
+</div>
