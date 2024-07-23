@@ -1,22 +1,95 @@
   <!-- Loop over each object in the projects array -->
 
-  <div class='container-fluid hero'>
+  <div class='container-fluid hero builds-hero'>
     <div class='row'>
       {{#each pcBuilds as |pcBuild|}}
         <div class='col-md-5'>
           <h2>
             <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-            <a href='/pcBuilds/{{pcBuild.id}}'>{{pcBuild.name}}</a>
+            <a href='/pcBuilds/{{pcBuild.id}}'>Christmas Present PC Build</a>
           </h2>
-          <p>PC Parts List (JSON):</p>
-          <pre>{{stringify pcBuild.pcPartsList}}</pre>
+          <p></p>
+          <pre></pre>
           <p>Created by {{pcBuild.email}}</p>
         </div>
         <div class='col-md-7'>
           <p>
-            {{pcBuild.comments}}
+            {{!-- {{pcBuild.comments}} --}}
           </p>
         </div>
       {{/each}}
     </div>
+    
+<table class="table table-dark table-striped my-5 py-5">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Amazon Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU</td>
+      <td>Cooler Master Hyper 212 EVO</td>
+      <td>CPU Cooler</td>
+      <td>$35.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>CPU Cooler</td>
+      <td>AMD Ryzen 5 5600X</td>
+      <td>CPU Cooler</td>
+      <td>$180.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>Motherboard</td>
+      <td>MSI B450 TOMAHAWK MAX</td>
+      <td>Motherboard</td>
+      <td>$100.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3200</td>
+      <td>Memory</td>
+      <td>$70.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td>Samsung 980 Pro 2TB NVMe SSD </td>
+      <td>Storage</td>
+      <td>$250.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>video GPU</td>
+      <td>Nvidia GeForce GTX 1660 Super </td>
+      <td>Video GPU</td>
+      <td>$200.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>Case</td>
+      <td>Nvidia GeForce RTX 3090 Ti</td>
+      <td>Case</td>
+      <td>$1200.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+    <tr>
+      <td>PSU</td>
+      <td>Corsair RM750x</td>
+      <td>PSU</td>
+      <td>$120.00</td>
+      <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
+    </tr>
+
+  </tbody>
+</table>
   </div>
+
+<script src="/js/builds.js"></script>

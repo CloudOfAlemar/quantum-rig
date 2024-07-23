@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PcBuild, Guest, Part} = require('../models');
+const { PcBuild, Guest, Part, PcPart} = require('../models');
 const withAuth = require('../utils/auth');
 
 const caseParts = require( "../seeds/partChoice/case.json" );
@@ -36,6 +36,17 @@ router.get( "/", async ( req, res ) => {
   }
 } );
 
+router.get( "/pc-parts", async ( req, res ) => {
+  try {
+    const partData = await PcPart.findAll();
+    const parts = partData.map( part => part.get( { plain : true } ) );
+    console.log( parts );
+    res.render( "builds", { parts } );
+  } catch( error ) {
+    res.status( 500 ).json( { error } );
+  }
+} );
+
 router.get('/builds', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -48,12 +59,15 @@ router.get('/builds', async (req, res) => {
       ],
     });
 
+    const partData = await PcPart.findAll();
+    const parts = partData.map( part => part.get( { plain : true } ) );
+
     // Serialize data so the template can read it
     const pcBuilds = pcBuildData.map((pcBuild) => pcBuild.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('builds', { 
-      pcBuilds, 
+      pcBuilds,
       logged_in: req.session.logged_in 
     });
   } catch (err) {

@@ -1,6 +1,6 @@
 [
     {"id": 0, 
-    "name": "testBuild",
+    "name": "Christmas Present PC Build",
     "email": "email@email.com",
     "pcPartsList": [
         {
@@ -14,7 +14,7 @@
             "PSU": 111
         }
     ],
-    "comments": "this is a test",
+    "comments": "The perfect PC for a Student.",
     "isPublic": true
     }
 

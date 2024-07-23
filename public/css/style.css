@@ -208,7 +208,8 @@ h2 {
     padding: 8rem 4rem 4rem 4rem;
   }
 
-  .forge-hero {
+  .forge-hero,
+  .builds-hero {
     height: auto;
   }
 
