@@ -52,6 +52,9 @@ Quantum Rig is a full-stack web application that allows users to create and mana
 
     The application will be available at `http://localhost:3001`.
 
+## Deployed Link
+[Quantum Rig](https://quantum-rig.onrender.com)
+
 ## Usage
 
 1. **Sign Up**: Create a new account.
