@@ -7,7 +7,7 @@
 
 //new stuff; some wierd casing stuff will fix later
 const Guest = require('./Guest');
-const PcPart = require('./PcPart');
+const PcPart = require('./pcPart');
 const PcBuild = require('./pcBuild2');
 
 
@@ -25,4 +25,4 @@ PcPart.belongsTo(PcBuild, {
   foreignKey: 'pc_build_id'
 });
 
-module.exports = { Guest, PcPart, PcBuild, PcBuild };
+module.exports = { Guest, PcPart, PcBuild };
