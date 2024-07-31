@@ -19,7 +19,7 @@ Part.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        isIn: ["CPU", "GPU", "Motherboard", "PSU", "CPU Cooler", "RAM", "SSD"]
+        isIn: ["CPU", "GPU", "Motherboard", "PSU", "CPU Cooler", "Memory", "Storage", "Case"]
       }
     },
     description: {

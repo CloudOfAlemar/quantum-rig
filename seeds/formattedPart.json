@@ -841,213 +841,213 @@
   },
   {
     "name": "Nvidia GeForce GTX 1660 Super",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "729.95",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "AMD Radeon RX 5600 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "40.76",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "Nvidia GeForce GTX 1650 Super",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "232.77",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "AMD Radeon RX 5500 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "259.66",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "Nvidia GeForce GTX 1660",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "333.39",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "AMD Radeon RX 580",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "36.67",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "Nvidia GeForce GTX 1650",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "737.94",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "AMD Radeon RX 570",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "987.58",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "Nvidia GeForce GTX 1050 Ti",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "117.83",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "AMD Radeon RX 470",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "budget",
     "price": "227.02",
-    "description": "BUDGET Video GPU"
+    "description": "BUDGET GPU"
   },
   {
     "name": "Nvidia GeForce RTX 3060 Ti",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "217.46",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "AMD Radeon RX 6700 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "960.05",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "Nvidia GeForce RTX 3060",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "247.52",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "AMD Radeon RX 6600 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "323.77",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "Nvidia GeForce RTX 2070 Super",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "100.54",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "AMD Radeon RX 5700 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "588.00",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "Nvidia GeForce RTX 2060",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "717.69",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "AMD Radeon RX 5700",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "320.82",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "Nvidia GeForce GTX 1080 Ti",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "66.81",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "AMD Radeon RX Vega 64",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "mid-range",
     "price": "102.12",
-    "description": "MID-RANGE Video GPU"
+    "description": "MID-RANGE GPU"
   },
   {
     "name": "Nvidia GeForce RTX 4090",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "706.43",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "117.34",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "Nvidia GeForce RTX 4080",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "581.72",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "AMD Radeon RX 7900 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "842.33",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "Nvidia GeForce RTX 3090 Ti",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "68.90",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "AMD Radeon RX 6900 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "9.71",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "Nvidia GeForce RTX 3090",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "209.67",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "AMD Radeon RX 6800 XT",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "609.61",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "Nvidia GeForce RTX 3080 Ti",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "946.30",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "AMD Radeon RX 6800",
-    "type": "Video GPU",
+    "type": "GPU",
     "priceRange": "high-end",
     "price": "500.78",
-    "description": "HIGH-END Video GPU"
+    "description": "HIGH-END GPU"
   },
   {
     "name": "NZXT H510",
@@ -1258,5 +1258,426 @@
     "priceRange": "high-end",
     "price": "617.54",
     "description": "HIGH-END Case"
+  },
+
+  {
+    "name": "Samsung 970 EVO Plus 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "673.34",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Crucial P2 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "272.67",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Kingston A2000 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "405.55",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "WD Blue SN550 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "618.57",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Sabrent Rocket Q 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "609.31",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "ADATA XPG SX8200 Pro 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "138.84",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Silicon Power P34A80 512GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "287.45",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Patriot P300 512GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "181.95",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "TeamGroup MP33 512GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "528.41",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "Lexar NM610 500GB NVMe",
+    "type": "Storage",
+    "priceRange": "budget",
+    "price": "867.10",
+    "description": "BUDGET Storage"
+  },
+  {
+    "name": "WD Black SN850 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "469.56",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Samsung 980 PRO 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "731.83",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Seagate FireCuda 530 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "37.39",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Crucial P5 Plus 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "465.67",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Kingston KC3000 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "593.06",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Sabrent Rocket 4 Plus 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "77.17",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "ADATA XPG Gammix S70 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "531.32",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Silicon Power US70 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "167.02",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Patriot Viper VP4100 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "893.77",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "TeamGroup T-Force Cardea A440 1TB NVMe",
+    "type": "Storage",
+    "priceRange": "mid-range",
+    "price": "654.28",
+    "description": "MID-RANGE Storage"
+  },
+  {
+    "name": "Samsung 990 PRO 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "11.38",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "WD Black SN850X 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "353.24",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Seagate FireCuda 530 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "228.95",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Sabrent Rocket 4 Plus 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "547.91",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "ADATA XPG Gammix S70 Blade 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "104.15",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Kingston KC3000 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "266.03",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Crucial P5 Plus 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "854.51",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Patriot Viper VP4300 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "620.30",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "Silicon Power US90 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "538.60",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "TeamGroup T-Force Cardea A440 Pro 2TB NVMe",
+    "type": "Storage",
+    "priceRange": "high-end",
+    "price": "142.94",
+    "description": "HIGH-END Storage"
+  },
+  {
+    "name": "EVGA 600 W1, 80+ WHITE 600W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "589.63",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Corsair CX550M, 80+ BRONZE 550W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "513.17",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Thermaltake Smart 500W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "565.49",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Cooler Master MasterWatt 550W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "648.68",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Seasonic S12III 500 SSR-500GB3",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "799.39",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Antec Earthwatts EA550G PRO",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "651.69",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Be Quiet! System Power 9 500W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "430.98",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "SilverStone Strider Essential 500W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "317.35",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Rosewill Glacier 550W",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "659.70",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Fractal Design Ion SFX 500G",
+    "type": "PSU",
+    "priceRange": "budget",
+    "price": "171.96",
+    "description": "BUDGET PSU"
+  },
+  {
+    "name": "Corsair RM750x, 80+ GOLD 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "563.79",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "EVGA SuperNOVA 750 G5, 80+ GOLD 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "24.45",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Seasonic Focus GX-750, 80+ GOLD 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "630.86",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Cooler Master MWE Gold 750 V2",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "46.64",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Thermaltake Toughpower GF1 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "260.08",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Antec Earthwatts Gold Pro 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "648.08",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Be Quiet! Straight Power 11 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "560.77",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "SilverStone Strider Platinum 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "924.95",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Rosewill Quark 750W",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "318.27",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Fractal Design Ion+ 760P",
+    "type": "PSU",
+    "priceRange": "mid-range",
+    "price": "204.25",
+    "description": "MID-RANGE PSU"
+  },
+  {
+    "name": "Corsair AX1600i, 80+ TITANIUM 1600W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "72.70",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "EVGA SuperNOVA 1600 T2, 80+ TITANIUM 1600W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "753.66",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Seasonic Prime TX-1600, 80+ TITANIUM 1600W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "251.38",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Cooler Master V1300 Platinum, 80+ PLATINUM 1300W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "234.32",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Thermaltake Toughpower iRGB PLUS 1250W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "929.07",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Antec HCP-1300 Platinum",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "535.96",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Be Quiet! Dark Power Pro 12 1500W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "460.36",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "SilverStone Strider Titanium 1500W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "42.03",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Rosewill Hercules 1600W",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "463.68",
+    "description": "HIGH-END PSU"
+  },
+  {
+    "name": "Fractal Design Ion+ 860P",
+    "type": "PSU",
+    "priceRange": "high-end",
+    "price": "955.11",
+    "description": "HIGH-END PSU"
   }
 ]

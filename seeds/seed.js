@@ -3,7 +3,7 @@ const { Guest, PcBuild, Part} = require('../models');
 
 const guestData = require('./guestData.json');
 const pc_build_data = require('./pcBuildData.json');
-const part_data = require('./partData.json');
+const part_data = require('./formattedPart.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -18,8 +18,64 @@ const seedDatabase = async () => {
       ...pc_build
     });
   };
+  const cpuData = part_data.filter(part => part.type === 'CPU');
+  const gpuData = part_data.filter(part => part.type === 'GPU');
+  const motherboardData = part_data.filter(part => part.type === 'Motherboard');
+  const ramData = part_data.filter(part => part.type === 'Memory');
+  const ssdData = part_data.filter(part => part.type === 'Storage');
+  const psuData = part_data.filter(part => part.type === 'PSU');
+  const caseData = part_data.filter(part => part.type === 'Case');
+  const coolerData = part_data.filter(part => part.type === 'CPU Cooler');
+  let randomParts1 = [];
+  let randomParts2 = [];
+  let randomParts3 = [];
+  randomParts1.push(cpuData[Math.floor((Math.random() * cpuData.length))]);
+  randomParts1.push(gpuData[Math.floor((Math.random() * gpuData.length))]);
+  randomParts1.push(motherboardData[Math.floor((Math.random() * motherboardData.length))]);
+  randomParts1.push(ramData[Math.floor((Math.random() * ramData.length))]);
+  randomParts1.push(ssdData[Math.floor((Math.random() * ssdData.length))]);
+  randomParts1.push(psuData[Math.floor((Math.random() * psuData.length))]);
+  randomParts1.push(caseData[Math.floor((Math.random() * caseData.length))]);
+  randomParts1.push(coolerData[Math.floor((Math.random() * coolerData.length))]);
+  const updatedParts1 = randomParts1.map(part => ({
+    ...part,
+    pc_build_id: 1
+  }));
+  randomParts2.push(cpuData[Math.floor((Math.random() * cpuData.length))]);
+  randomParts2.push(gpuData[Math.floor((Math.random() * gpuData.length))]);
+  randomParts2.push(motherboardData[Math.floor((Math.random() * motherboardData.length))]);
+  randomParts2.push(ramData[Math.floor((Math.random() * ramData.length))]);
+  randomParts2.push(ssdData[Math.floor((Math.random() * ssdData.length))]);
+  randomParts2.push(psuData[Math.floor((Math.random() * psuData.length))]);
+  randomParts2.push(caseData[Math.floor((Math.random() * caseData.length))]);
+  randomParts2.push(coolerData[Math.floor((Math.random() * coolerData.length))]);
+  const updatedParts2 = randomParts2.map(part => ({
+    ...part,
+    pc_build_id: 2
+  }));
 
-  const parts = await Part.bulkCreate(part_data, {
+  randomParts3.push(cpuData[Math.floor((Math.random() * cpuData.length))]);
+  randomParts3.push(gpuData[Math.floor((Math.random() * gpuData.length))]);
+  randomParts3.push(motherboardData[Math.floor((Math.random() * motherboardData.length))]);
+  randomParts3.push(ramData[Math.floor((Math.random() * ramData.length))]);
+  randomParts3.push(ssdData[Math.floor((Math.random() * ssdData.length))]);
+  randomParts3.push(psuData[Math.floor((Math.random() * psuData.length))]);
+  randomParts3.push(caseData[Math.floor((Math.random() * caseData.length))]);
+  randomParts3.push(coolerData[Math.floor((Math.random() * coolerData.length))]);
+  const updatedParts3 = randomParts3.map(part => ({
+    ...part,
+    pc_build_id: 3
+  }));
+  console.log(randomParts1);
+  const parts1 = await Part.bulkCreate(updatedParts1, {
+    individualHooks: true,
+    returning: true
+  });
+  const parts2 = await Part.bulkCreate(updatedParts2, {
+    individualHooks: true,
+    returning: true
+  });
+  const parts3 = await Part.bulkCreate(updatedParts3, {
     individualHooks: true,
     returning: true
   });
