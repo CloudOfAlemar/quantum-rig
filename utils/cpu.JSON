@@ -1,0 +1,44 @@
+[{
+    "budget": {
+        "parts": [
+            "AMD Ryzen 5 5600X",
+            "Intel Core i3-12100F",
+            "AMD Ryzen 3 3300X",
+            "Intel Core i5-10400F",
+            "Intel Core i3-10100F",
+            "AMD Ryzen 3 3200G",
+            "Intel Core i3-10100",
+            "Intel Core i5-9400F",
+            "AMD Ryzen 5 3600",
+            "Intel Core i3-9100F"
+    ]
+    },
+    "mid-Range": {
+        "parts": [
+            "Intel Core i5-12600K",
+            "AMD Ryzen 7 5800X",
+            "Intel Core i5-13400F",
+            "Intel Core i5-11600K",
+            "AMD Ryzen 7 5700X",
+            "Intel Core i5-11400F",
+            "AMD Ryzen 5 5600",
+            "Intel Core i7-10700K",
+            "AMD Ryzen 7 3700X",
+            "Intel Core i7-11700K"
+    ]
+    },
+    "high-end": {
+        "parts": [
+            "AMD Ryzen 9 7950X",
+            "Intel Core i9-13900K",
+            "AMD Ryzen 9 7900X",
+            "Intel Core i9-12900K",
+            "AMD Ryzen 9 5950X",
+            "Intel Core i9-11900K",
+            "AMD Ryzen 9 5900X",
+            "Intel Core i9-10900K",
+            "AMD Ryzen 9 3950X",
+            "Intel Core i9-9900K"
+    ]
+    }
+}]

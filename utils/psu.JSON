@@ -1,0 +1,44 @@
+[{
+    "budget": {
+        "parts": [
+            "EVGA 600 W1, 80+ WHITE 600W",
+            "Corsair CX550M, 80+ BRONZE 550W",
+            "Thermaltake Smart 500W",
+            "Cooler Master MasterWatt 550W",
+            "Seasonic S12III 500 SSR-500GB3",
+            "Antec Earthwatts EA550G PRO",
+            "Be Quiet! System Power 9 500W",
+            "SilverStone Strider Essential 500W",
+            "Rosewill Glacier 550W",
+            "Fractal Design Ion SFX 500G"
+    ]
+    },
+    "mid-Range": {
+        "parts": [
+            "Corsair RM750x, 80+ GOLD 750W",
+            "EVGA SuperNOVA 750 G5, 80+ GOLD 750W",
+            "Seasonic Focus GX-750, 80+ GOLD 750W",
+            "Cooler Master MWE Gold 750 V2",
+            "Thermaltake Toughpower GF1 750W",
+            "Antec Earthwatts Gold Pro 750W",
+            "Be Quiet! Straight Power 11 750W",
+            "SilverStone Strider Platinum 750W",
+            "Rosewill Quark 750W",
+            "Fractal Design Ion+ 760P"
+    ]
+    },
+    "high-end": {
+        "parts": [
+            "Corsair AX1600i, 80+ TITANIUM 1600W",
+            "EVGA SuperNOVA 1600 T2, 80+ TITANIUM 1600W",
+            "Seasonic Prime TX-1600, 80+ TITANIUM 1600W",
+            "Cooler Master V1300 Platinum, 80+ PLATINUM 1300W",
+            "Thermaltake Toughpower iRGB PLUS 1250W",
+            "Antec HCP-1300 Platinum",
+            "Be Quiet! Dark Power Pro 12 1500W",
+            "SilverStone Strider Titanium 1500W",
+            "Rosewill Hercules 1600W",
+            "Fractal Design Ion+ 860P"
+    ]
+    }
+}]
