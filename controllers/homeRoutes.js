@@ -1,14 +1,14 @@
 const router = require('express').Router();
 const { PcBuild, Guest, Part} = require('../models');
 const withAuth = require('../utils/auth');
-const caseParts = require( "../seeds/partChoice/case.json" );
-const coolerParts = require( "../seeds/partChoice/cooler.json" );
-const cpuParts = require( "../seeds/partChoice/cpu.json" );
-const gpuParts = require( "../seeds/partChoice/gpu.json" );
-const memoryParts = require( "../seeds/partChoice/memory.json" );
-const motherboardParts = require( "../seeds/partChoice/motherboard.json" );
-const psuParts = require( "../seeds/partChoice/psu.json" );
-const storageParts = require( "../seeds/partChoice/storage.json" );
+const caseParts = require( "../seeds/partChoice/case" );
+const coolerParts = require( "../seeds/partChoice/cooler" );
+const cpuParts = require( "../seeds/partChoice/cpu" );
+const gpuParts = require( "../seeds/partChoice/gpu" );
+const memoryParts = require( "../seeds/partChoice/memory" );
+const motherboardParts = require( "../seeds/partChoice/motherboard" );
+const psuParts = require( "../seeds/partChoice/psu" );
+const storageParts = require( "../seeds/partChoice/storage" );
 
 const partsArray = [
   { name : "Case", parts : caseParts[ 0 ] },
