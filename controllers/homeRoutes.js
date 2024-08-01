@@ -59,7 +59,7 @@ router.get('/builds', async (req, res) => {
 /*
   Creating Forge Routes ( Where we will build our PC )
 */
-router.get( "/forge", async ( req, res ) => {
+router.get( "/forge", withAuth, async ( req, res ) => {
   try {
     res.render( "forge", { partsArray } );
   } catch( error ) {
