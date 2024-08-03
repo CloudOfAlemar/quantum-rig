@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { Guest, PcBuild, Part} = require('../models');
+const { Guest, PcBuild, Part, PartChoice} = require('../models');
 
 const guestData = require('./guestData.json');
 const pc_build_data = require('./pcBuildData.json');
@@ -18,6 +18,12 @@ const seedDatabase = async () => {
       ...pc_build
     });
   };
+
+  const partChoice = await PartChoice.bulkCreate(part_data, {
+    individualHooks: true,
+    returning: true,
+  });
+
   const cpuData = part_data.filter(part => part.type === 'CPU');
   const gpuData = part_data.filter(part => part.type === 'GPU');
   const motherboardData = part_data.filter(part => part.type === 'Motherboard');
@@ -26,6 +32,7 @@ const seedDatabase = async () => {
   const psuData = part_data.filter(part => part.type === 'PSU');
   const caseData = part_data.filter(part => part.type === 'Case');
   const coolerData = part_data.filter(part => part.type === 'CPU Cooler');
+
   let randomParts1 = [];
   let randomParts2 = [];
   let randomParts3 = [];

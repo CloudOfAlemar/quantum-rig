@@ -10,7 +10,7 @@
 
 .hero {
   background: url('../img/quantum-rig-bg.svg');
-  min-height: 83vh; /* Extend to the bottom of the page */
+  min-height: 90vh; /* Extend to the bottom of the page */
   background-size: cover;
   background-position: 60% 0%;
   background-repeat: no-repeat;
@@ -38,6 +38,10 @@
 
 #landing-page-login-btn {
   background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 5%;
   border: 2px solid var(--red);
   color: var(--light-blue);
 }
@@ -68,11 +72,25 @@
 
 .footer {
   padding: 2rem;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
 }
+
 
 /*
   Forge Styles
 */
+
+.card-text {
+  color: black;
+}
+
+.modal {
+  color: black;
+}
 
 /* Color Utility Classes */
 .bg-purple-pink-gradient {
@@ -196,6 +214,12 @@ h2 {
     padding: 8rem 4rem 4rem 4rem;
   }
 
+  .forge-hero,
+  .builds-hero,
+  .pc-parts-hero {
+    height: auto;
+  }
+
   .hero-content {
     max-width: 400px;
     padding: 2rem;
@@ -203,9 +227,5 @@ h2 {
 
   .hero-heading {
     font-size: 50px;
-  }
-
-  .hero-pcBuild {
-    height: auto;
   }
 }

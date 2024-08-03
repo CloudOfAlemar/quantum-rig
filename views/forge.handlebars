@@ -1,28 +1,28 @@
 <div class="container-fluid py-5 hero forge-hero">
-  <div class="row">
+  <div class="row justify-content-center">
     {{!-- Heading Column --}}
-    <div class="col-12 mb-5">
+    <div class="col-12 mb-5 text-center">
       <h2 class="forge-heading">
         Create Your Ideal PC:
       </h2>
     </div>
 
-    <form id="pc-build-form" class="forge-form mb-5">
+    <form id="pc-build-form" class="forge-form mb-5 justify-content-center">
       <div class="form-group">
         <label for="build-name">Build Name</label>
         <input type="text" class="form-control" id="build-name" placeholder="Give a name to your build">
       </div>
       <div class="form-group">
         <label for="build-comments">Build Comments</label>
-        <input type="text" class="form-control" id="build-comments" placeholder="Comments...">
+        <textarea class="form-control" id="build-comments" placeholder="Comments..."></textarea>
       </div>
     </form>
   </div>
 
-  <div class="row pc-part-cards-row">
+  <div class="row pc-part-cards-row justify-content-center">
     {{#each partsArray as |part|}}
       {{!-- Part Column --}}
-      <div class="col-12 px-0">
+      <div class="col-5 px-0 mx-1">
         <div class="card pc-part-card" data-pc-part-card-name="{{part.name}}">
           <div class="card-header">
             {{!-- Button: Trigger Modal --}}
@@ -43,30 +43,31 @@
                   <div class="modal-body forge-modal-body">
                     <h5>Budget</h5>
                     <hr>
-                      {{#each part.parts.budget.parts as |pcPart|}}
-                        <div class="pc-part-wrapper mb-4">
-                          {{!-- {{pcPart.name}} --}}
-                          <p class="mb-2 pc-part-title">{{pcPart}}</p>
-                          {{!-- <p class="mb-2 pc-part-avg-price">{{pcPart.averagePrice}}</p> --}}
-
-                          {{!-- data-pcPartId="{{pcPart.id}}" --}}
-                          <button class="btn btn-success pc-part-btn" data-dismiss="modal">Add +</button>
-                        </div>
-                      {{/each}}
-                    <h5>Mid-Ranged</h5>
-                    <hr>
-                    {{#each part.parts.mid-Range.parts as |pcPart|}}
+                    {{#each part.parts.budget as |pcPart|}}
                       <div class="pc-part-wrapper mb-4">
-                        <p class="mb-2 pc-part-title">{{pcPart}}</p>
-                        <button class="btn btn-success pc-part-btn" data-part-name="{{pcPart}}" data-part-category="mid-Range" data-dismiss="modal">Add +</button>
+                        <p class="mb-2 pc-part-title">{{pcPart.name}}</p>
+                        <p class="mb-2 pc-part-price">Price: ${{pcPart.price}}</p>
+                        <button class="btn btn-success pc-part-btn" data-part-name="{{pcPart.name}}" data-part-category="budget" data-dismiss="modal">Add +</button>
                       </div>
                     {{/each}}
+
+                    <h5>Mid-Range</h5>
+                    <hr>
+                    {{#each part.parts.mid_range as |pcPart|}}
+                      <div class="pc-part-wrapper mb-4">
+                        <p class="mb-2 pc-part-title">{{pcPart.name}}</p>
+                        <p class="mb-2 pc-part-price">Price: ${{pcPart.price}}</p>
+                        <button class="btn btn-success pc-part-btn" data-part-name="{{pcPart.name}}" data-part-category="mid-range" data-dismiss="modal">Add +</button>
+                      </div>
+                    {{/each}}
+
                     <h5>High-End</h5>
                     <hr>
-                    {{#each part.parts.high-end.parts as |pcPart|}}
+                    {{#each part.parts.high_end as |pcPart|}}
                       <div class="pc-part-wrapper mb-4">
-                        <p class="mb-2 pc-part-title">{{pcPart}}</p>
-                        <button class="btn btn-success pc-part-btn" data-part-name="{{pcPart}}" data-part-category="high-end" data-dismiss="modal">Add +</button>
+                        <p class="mb-2 pc-part-title">{{pcPart.name}}</p>
+                        <p class="mb-2 pc-part-price">Price: ${{pcPart.price}}</p>
+                        <button class="btn btn-success pc-part-btn" data-part-name="{{pcPart.name}}" data-part-category="high-end" data-dismiss="modal">Add +</button>
                       </div>
                     {{/each}}
                   </div>
@@ -84,7 +85,7 @@
   </div> {{!-- End Of Row --}}
 
   <div class="row justify-content-center">
-    <button type="submit" class="btn build-pc-btn" id="build-pc-btn">Build PC</button>
+    <button type="submit" class="btn build-pc-btn btn-lg" id="build-pc-btn">Build PC</button>
   </div>
 </div>
 

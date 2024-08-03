@@ -1,25 +1,6 @@
 const router = require('express').Router();
-const { PcBuild, Guest, Part} = require('../models');
+const { PcBuild, Guest, Part, PartChoice} = require('../models');
 const withAuth = require('../utils/auth');
-const caseParts = require( "../seeds/partChoice/case" );
-const coolerParts = require( "../seeds/partChoice/cooler" );
-const cpuParts = require( "../seeds/partChoice/cpu" );
-const gpuParts = require( "../seeds/partChoice/gpu" );
-const memoryParts = require( "../seeds/partChoice/memory" );
-const motherboardParts = require( "../seeds/partChoice/motherboard" );
-const psuParts = require( "../seeds/partChoice/psu" );
-const storageParts = require( "../seeds/partChoice/storage" );
-
-const partsArray = [
-  { name : "Case", parts : caseParts[ 0 ] },
-  { name : "Cooler", parts : coolerParts[ 0 ] },
-  { name : "CPU", parts : cpuParts[ 0 ] },
-  { name : "GPU", parts : gpuParts[ 0 ] },
-  { name : "Memory", parts : memoryParts[ 0 ] },
-  { name : "Motherboard", parts : motherboardParts[ 0 ] },
-  { name : "PSU", parts : psuParts[ 0 ] },
-  { name : "Storage", parts : storageParts[ 0 ] }
-];
 
 router.get( "/", async ( req, res ) => {
   try {
@@ -61,8 +42,94 @@ router.get('/builds', async (req, res) => {
 */
 router.get( "/forge", withAuth, async ( req, res ) => {
   try {
+    const partData = await PartChoice.findAll();
+    const parts = partData.map(part => part.get({plain: true}));
+
+    const cpuParts = parts.filter(part => part.type === "CPU");
+    const gpuParts = parts.filter(part => part.type === "GPU");
+    const caseParts = parts.filter(part => part.type === "Case");
+
+    const coolerParts = parts.filter(part => part.type === "CPU Cooler");
+
+    const memoryParts = parts.filter(part => part.type === "Memory");
+
+    const motherboardParts = parts.filter(part => part.type === "Motherboard");
+
+    const psuParts = parts.filter(part => part.type === "PSU");
+
+    const storageParts = parts.filter(part => part.type === "Storage");
+
+    let partsArray = [
+      { 
+      name : "Case", 
+      parts : {budget: JSON.stringify(caseParts.filter(part => part.priceRange === 'budget')),
+               high_end: JSON.stringify(caseParts.filter(part => part.priceRange === 'high-end')),
+               mid_range: JSON.stringify(caseParts.filter(part => part.priceRange === 'mid-range'))
+              }
+      },
+      { 
+        name : "Cooler", 
+        parts : {budget: JSON.stringify(coolerParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(coolerParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(coolerParts.filter(part => part.priceRange === 'mid-range'))
+       } 
+      },
+      { 
+        name : "CPU", 
+        parts : {budget: JSON.stringify(cpuParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(cpuParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(cpuParts.filter(part => part.priceRange === 'mid-range'))
+       }
+      },
+      { 
+        name : "GPU", 
+        parts : {budget: JSON.stringify(gpuParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(gpuParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(gpuParts.filter(part => part.priceRange === 'mid-range'))
+       } 
+      },
+      { 
+        name : "Memory", 
+        parts : {budget: JSON.stringify(memoryParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(memoryParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(memoryParts.filter(part => part.priceRange === 'mid-range'))
+       }
+      },
+      { 
+        name : "Motherboard", 
+        parts : {budget: JSON.stringify(motherboardParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(motherboardParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(motherboardParts.filter(part => part.priceRange === 'mid-range'))
+       }
+      },
+      { 
+        name : "PSU", 
+        parts : {budget: JSON.stringify(psuParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(psuParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(psuParts.filter(part => part.priceRange === 'mid-range'))
+       }
+      },
+      { 
+        name : "Storage", 
+        parts : {budget: JSON.stringify(storageParts.filter(part => part.priceRange === 'budget')),
+                high_end: JSON.stringify(storageParts.filter(part => part.priceRange === 'high-end')),
+                mid_range: JSON.stringify(storageParts.filter(part => part.priceRange === 'mid-range'))
+       }
+      }
+    ];
+
+    partsArray = partsArray.map(part => ({
+      ...part,
+      parts: {
+        budget: JSON.parse(part.parts.budget),
+        mid_range: JSON.parse(part.parts.mid_range),
+        high_end: JSON.parse(part.parts.high_end)
+      }
+    }));
+    console.log(partsArray);
     res.render( "forge", { partsArray } );
   } catch( error ) {
+    console.log(error);
     res.status( 500 ).json( { error } );
   }
 } );
