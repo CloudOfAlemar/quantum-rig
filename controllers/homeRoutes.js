@@ -1,15 +1,49 @@
+const path = require('path');
 const router = require('express').Router();
 const { PcBuild, Guest, Part, PcPart } = require('../models');
 const withAuth = require('../utils/auth');
 
-const caseParts = require('../seeds/partChoice/case.json');
-const coolerParts = require('../seeds/partChoice/cooler.json');
-const cpuParts = require('../seeds/partChoice/cpu.json');
-const gpuParts = require('../seeds/partChoice/gpu.json');
-const memoryParts = require('../seeds/partChoice/memory.json');
-const motherboardParts = require('../seeds/partChoice/motherboard.json');
-const psuParts = require('../seeds/partChoice/psu.json');
-const storageParts = require('../seeds/partChoice/storage.json');
+// const caseParts = require('../seeds/partChoice/case.json');
+// const coolerParts = require('../seeds/partChoice/cooler.json');
+// const cpuParts = require('../seeds/partChoice/cpu.json');
+// const gpuParts = require('../seeds/partChoice/gpu.json');
+// const memoryParts = require('../seeds/partChoice/memory.json');
+// const motherboardParts = require('../seeds/partChoice/motherboard.json');
+// const psuParts = require('../seeds/partChoice/psu.json');
+// const storageParts = require('../seeds/partChoice/storage.json');
+
+const caseParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/case.json'
+));
+const coolerParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/cooler.json'
+));
+const cpuParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/cpu.json'
+));
+const gpuParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/gpu.json'
+));
+const memoryParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/memory.json'
+));
+const motherboardParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/motherboard.json'
+));
+const psuParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/psu.json'
+));
+const storageParts = require(path.resolve(
+  __dirname,
+  '../seeds/partChoice/storage.json'
+));
 
 const partsArray = [
   { name: 'Case', parts: caseParts[0] },

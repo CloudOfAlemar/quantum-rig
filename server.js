@@ -14,14 +14,17 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Create a write stream for the access log in append mode
-const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+const accessLogStream = fs.createWriteStream(
+  path.join(__dirname, 'access.log'),
+  { flags: 'a' }
+);
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({
   helpers: {
     ...helpers,
-    stringify: (context) => JSON.stringify(context, null, 2) // Custom helper to stringify objects
-  }
+    stringify: (context) => JSON.stringify(context, null, 2), // Custom helper to stringify objects
+  },
 });
 
 const sess = {
