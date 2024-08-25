@@ -24,6 +24,15 @@
       <td><a href="https://www.amazon.com/s?k={{part.name}}">Shop {{part.name}} @ amazon</a></td>
     </tr>
     {{/each}}
+    {{#if total}}
+    <tr style="max-width: 70px; min-width: 70px;">
+      <td></td>
+      <td></td>
+      <th scope="row">Total:</th>
+      <td>{{total}}</td>
+      <td></td>
+    </tr>
+    {{/if}}
   </tbody>
 </table>
 

@@ -134,7 +134,7 @@ router.get( "/forge", withAuth, async ( req, res ) => {
   }
 } );
 
-router.get('/pcBuilds/:id', async (req, res) => {
+router.get('/pcBuilds/:id', withAuth, async (req, res) => {
   try {
     const pcBuildData = await PcBuild.findByPk(req.params.id, {
       include: [
@@ -150,8 +150,11 @@ router.get('/pcBuilds/:id', async (req, res) => {
 
     const pcBuild = pcBuildData.get({ plain: true });
     console.log(JSON.stringify(pcBuild));
+    let total = 0;
+    console.log(pcBuild.parts.map(part => total+= part.price));
     res.render('pcBuild', {
       ...pcBuild,
+      total,
       logged_in: req.session.logged_in
     });
   } catch (err) {
