@@ -92,11 +92,13 @@ const seedDatabase = async () => {
   });
 
   for (const comment of commentData) {
+    count = 1
     await Commentary.create({
       ...comment,
-      guest_id: guests[Math.floor(Math.random() * guests.length)].id,
-      pc_build_id: guests[Math.floor(Math.random() * guests.length)].id
+      guest_id: count,
+      pc_build_id: count
     });
+    count+=1
   }
 
 
