@@ -90,9 +90,8 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true
   });
-
+  let count = 1
   for (const comment of commentData) {
-    count = 1
     await Commentary.create({
       ...comment,
       guest_id: count,
