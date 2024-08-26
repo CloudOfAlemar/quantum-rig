@@ -134,7 +134,7 @@ router.get( "/forge", withAuth, async ( req, res ) => {
   }
 } );
 
-router.get('/pcBuilds/:id', async (req, res) => {
+router.get('/pcBuilds/:id', withAuth, async (req, res) => {
   try {
     const pcBuildData = await PcBuild.findByPk(req.params.id, {
       include: [
