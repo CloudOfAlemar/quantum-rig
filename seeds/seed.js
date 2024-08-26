@@ -1,9 +1,10 @@
 const sequelize = require('../config/connection');
-const { Guest, PcBuild, Part, PartChoice} = require('../models');
+const { Guest, PcBuild, Part, PartChoice, Commentary } = require('../models');
 
 const guestData = require('./guestData.json');
 const pc_build_data = require('./pcBuildData.json');
 const part_data = require('./formattedPart.json');
+const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -74,18 +75,31 @@ const seedDatabase = async () => {
     pc_build_id: 3
   }));
   console.log(randomParts1);
+
   const parts1 = await Part.bulkCreate(updatedParts1, {
     individualHooks: true,
     returning: true
   });
+
   const parts2 = await Part.bulkCreate(updatedParts2, {
     individualHooks: true,
     returning: true
   });
+
   const parts3 = await Part.bulkCreate(updatedParts3, {
     individualHooks: true,
     returning: true
   });
+
+  for (const comment of commentData) {
+    await Commentary.create({
+      ...comment,
+      guest_id: guests[Math.floor(Math.random() * guests.length)].id,
+      pc_build_id: guests[Math.floor(Math.random() * guests.length)].id
+    });
+  }
+
+
   process.exit(0);
 };
 

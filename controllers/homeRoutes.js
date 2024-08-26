@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PcBuild, Guest, Part, PartChoice} = require('../models');
+const { PcBuild, Guest, Part, PartChoice, Commentary } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get( "/", async ( req, res ) => {
@@ -134,7 +134,7 @@ router.get( "/forge", withAuth, async ( req, res ) => {
   }
 } );
 
-router.get('/pcBuilds/:id', withAuth, async (req, res) => {
+router.get('/pcBuilds/:id', async (req, res) => {
   try {
     const pcBuildData = await PcBuild.findByPk(req.params.id, {
       include: [
@@ -144,7 +144,15 @@ router.get('/pcBuilds/:id', withAuth, async (req, res) => {
         },
         {
           model: Part
-        }
+        },
+        {
+          model: Commentary,
+          include: [
+            {
+              model: Guest,
+            }
+          ]
+        },
       ],
     });
 
@@ -157,6 +165,30 @@ router.get('/pcBuilds/:id', withAuth, async (req, res) => {
       total,
       logged_in: req.session.logged_in
     });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/comments/', async (req, res) => {
+  try {
+    // Get all blogPosts and JOIN with user data
+    const commentData = await Commentary.findAll({
+      include: [
+        {
+          model: Guest,
+          attributes: ['name'],
+        },
+        {
+          model: PcBuild
+        }
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
+
+    res.status(200).json(comments)
   } catch (err) {
     res.status(500).json(err);
   }
@@ -201,7 +233,6 @@ router.get('/logout', withAuth, (req, res) => {
     res.status(404).end();
   }
 });
-
 
 router.get('/signup', (req, res) => {
   res.render('signup');
